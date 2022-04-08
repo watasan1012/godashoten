@@ -543,6 +543,17 @@ product
     border-radius: .5vw;
 }
 
+.product-card__item{
+    background-color: rgba(204, 236, 204,0.5);
+    box-shadow: 0 2.5rem 2rem -2rem hsl(200 50% 20% / 40%);
+    transition: 1s;
+}
+
+.product-card__item:hover{
+    box-shadow: none;
+}
+
+/*
 .product-card__item:nth-of-type(1)
 {
     background-color: #aed2eb;
@@ -567,6 +578,7 @@ product
 {
     background-color: #e9cfe3;
 }
+*/
 
 .product-card__fig
 {
