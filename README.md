@@ -16,7 +16,7 @@ $ npm -v
 
 .git ファイルがあるディレクトリに移動する。(githubのローカルリポジトリ)
 
-### package.json の作成　　 
+### package.json の作成　　
 
 ```shell
 $ npm init -y
@@ -28,16 +28,16 @@ $ npm init -y
 $ npm install --save-dev stylelint stylelint-config-standard
 ```
 
-### stylelintの設定ファイルを作成する
-
-```shell
-$ touch .stylelintrc.json
-```
-
 ### vscode のPrettieと同時に実行したいので以下のコマンドを実行する
 
 ```shell
 npm install --save-dev stylelint-config-prettier
+```
+
+### stylelintの設定ファイルを作成する
+
+```shell
+$ touch .stylelintrc.json
 ```
 
 ### .stylelintrc.json の中身は
@@ -52,4 +52,25 @@ npm install --save-dev stylelint-config-prettier
 
 ```shell
 % npx stylelint css/*.css 
+```
+
+## .gitignore の作成
+
+.gitignoreファイルは、git対象からファイル、ディレクトリを外します。
+
+```shell
+% touch .gitignore
+```
+
+.gitignoreファイルには以下を記載する
+
+```.gitignore
+# ファイルを指定する
+.DS_Store
+.stylelintrc.json
+package.json
+package-lock.json
+
+# ディレクトリを指定する
+node_modules/
 ```
