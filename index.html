@@ -26,7 +26,7 @@
 
 </head>
 
-<body id="home">
+<body>
 
     <!-- loadingUnnecessary -->
     <!--
@@ -35,7 +35,7 @@
     </div>
 -->
     <!-- header -->
-    <header class="header-wrapper">
+    <header class="header__wrapper">
         <div class="header__inner">
             <a href="#" class="header__logo"><img src="./img/common_logo.svg" alt="江田商店"></a>
             <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false" tabindex="1" accesskey="m">
@@ -45,7 +45,7 @@
                 <ul id="gnav__list" class="gnav__list">
                     <li class="gnav__item"><a href="#hero" class="gnav__link">Home</a></li>
                     <li class="gnav__item"><a href="#notice" class="gnav__link">お知らせ</a></li>
-                    <li class="gnav__item"><a href="#product" class="gnav__link">商品のご案内 お品書き</a></li>
+                    <li class="gnav__item"><a href="#product" class="gnav__link">お品書き</a></li>
                     <li class="gnav__item"><a href="#calendar__wrap" class="gnav__link">催事カレンダー</a></li>
                     <li class="gnav__item"><a href="#introduction" class="gnav__link">会社紹介</a></li>
                     <li class="gnav__item"><a href="#privacy" class="gnav__link">プライバシー</a></li>
@@ -53,11 +53,10 @@
             </nav>
         </div>
     </header>
-
     <main>
         <div id="hero" class="hero">
-            <div class="hero-wrapper">
-                <div class="hero-text">
+            <div class="hero__wrapper">
+                <div class="hero__text">
                     <h1>江田商店</h1>
                     <p>はじめまして江田商店です。私どもは、美味しい和菓子、惣菜を全国から集めて、イベント、商業施設、駅前等で露店販売しております。ぜひお近くの会場でお手にとってお楽しみください。また、私どもでは、日本全国、駅ビル、商業施設等の、催事スペースを貸し出していただける企業様のご連絡をお待ちしております。</p>
                 </div>
@@ -102,300 +101,43 @@
             </div>
         </section>
         <section id="product" class="product">
-            <h2 class="product__title">商品のご案内</h2>
-            <ul class="product-card__list">
-
-                <li class="product-card__item">
-                    <a href="./product/index-1.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_manmaru.jpg" alt="oobanyaki">
+            <h2 class="product__title">お品書き</h2>
+            <ul class="product__list">
+                <li class="product__item">
+                    <div class="product__inner">
+                        <h3 class="product__title-third">季節の商品</h3>
+                        <figure class="product__figre">
+                            <img src="./img/IMG_imokenpikokutou.jpg" alt="季節の商品">
                         </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">まんまる(カスタード)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>180<span>円(税込)</span></dd>
-                        </dl>
-                        <div class="product-card__background"></div>
-                    </a>
+                        <a href="" class="product__details">詳細はこちら</a>
+                    </div>
                 </li>
-                <li class="product-card__item">
-                    <a href="./product/index-2.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_manmaru.jpg" alt="oobanyaki">
+                <li class="product__item">
+                    <div class="product__inner">
+                        <h3 class="product__title-third">生菓子</h3>
+                        <figure class="product__figre">
+                            <img src="./img/IMG_imokenpikokutou.jpg" alt="生菓子">
                         </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">まんまる(粒あん)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>180<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
+                        <a href="" class="product__details">詳細はこちら</a>
+                    </div>
                 </li>
-
-                <li class="product-card__item">
-                    <a href="./product/index-3.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_sakuraohagi.jpg" alt="sakuramoti">
+                <li class="product__item">
+                    <div class="product__inner">
+                        <h3 class="product__title-third">袋菓子</h3>
+                        <figure class="product__figre">
+                            <img src="./img/IMG_imokenpikokutou.jpg" alt="袋菓子">
                         </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">桜もち</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
+                        <a href="" class="product__details">詳細はこちら</a>
+                    </div>
                 </li>
-                <li class="product-card__item">
-                    <a href="./product/index-4.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_yomogiohagi.jpg" alt="yomogiohagi">
+                <li class="product__item">
+                    <div class="product__inner">
+                        <h3 class="product__title-third">油菓子</h3>
+                        <figure class="product__figre">
+                            <img src="./img/IMG_imokenpikokutou.jpg" alt="油菓子">
                         </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">よもぎおはぎ</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-5.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_kinakoohagi.jpg" alt="kinakoohagi">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">きな粉おはぎ</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-6.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_kurogomaohagi.jpg" alt="gomaohagi">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">ごまおはぎ</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-7.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_tubuanohagi.jpg" alt="tubuanohagi">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">つぶあんおはぎ</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-8.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_sasadango.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">笹団子(粒あん)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">5<span>個入</span>1080<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-9.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_sasadango.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">笹団子(こしあん)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">5<span>個入</span>1080<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-10.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_mitarashidango.jpg" alt="mitarashidango">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">みたらしだんご</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">2<span>本入</span>324<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-11.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_gomadango.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">ごまだんご</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">2<span>本入</span>324<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-
-                <li class="product-card__item">
-                    <a href="./product/index-12.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_sasadango.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">三色だんご</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">2<span>本入</span>324<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-13.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_koshiandango.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title"> こしあんだんご</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">2<span>本入</span>324<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-14.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_isobemoti.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">いそべもち</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-15.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_sakuradaihuku.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">桜大福</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-16.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_yomogidaihuku.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">よもぎ大福</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-17.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_shiromamedaihuku.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">塩豆大福</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-18.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_imokintuba.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">さつま芋きんつば</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-19.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_tubuankintuba.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">粒あんきんつば</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>216<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-20.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_torokerumizuyoukan.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">とろける水ようかん</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>個</span>378<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-21.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_imokenpishio.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">芋けんぴ (うす塩)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>袋</span>540<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-22.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_imokenpikokutou.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">芋けんぴ (黒糖)</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>袋</span>540<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-23.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_karintou.jpg" alt="karinto">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">鬼かりんとう</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>袋</span>540<span>円(税込)</span></dd>
-                            <dd class="product-card__price"><span>特盛</span>1<span>袋</span>1080<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
-                </li>
-                <li class="product-card__item">
-                    <a href="./product/index-24.html">
-                        <figure class="product-card__fig">
-                            <img src="./img/IMG_warabimoti.jpg" alt="warabimoti">
-                        </figure>
-                        <dl class="product-card__wrapper">
-                            <dt class="product-card__title">わらび餅</dt>
-                            <dd class="product-card__detail">詳細はこちら</dd>
-                            <dd class="product-card__price">1<span>箱</span>648<span>円(税込)</span></dd>
-                        </dl>
-                    </a>
+                        <a href="" class="product__details">詳細はこちら</a>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -439,10 +181,10 @@
                         当社では、次のような場合に必要な範囲で個人情報を収集することがあります。
                     </dd>
                     <dd class="privacy__tabledata">
-                        <ul class="privacy__list">
+                        <ol class="privacy__list">
                             <li>当社へのお問い合わせ時</li>
                             <li>当社へのサービスお申し込み時</li>
-                        </ul>
+                        </ol>
                     </dd>
                 </dl>
                 <dl class="introduction__table">
@@ -452,10 +194,10 @@
                         当社は、お客様から収集した個人情報を次の目的で利用いたします。
                     </dd>
                     <dd class="privacy__tabledata">
-                        <ul class="privacy__list">
+                        <ol class="privacy__list">
                             <li>お客様への連絡のため</li>
                             <li>お客様からのお問い合せに対する回答のため</li>
-                        </ul>
+                        </ol>
                     </dd>
                 </dl>
                 <dl class="introduction__table">
@@ -466,11 +208,11 @@
                     </dd>
                     <dd class="privacy__tabledata">ただし、次の場合は除きます。</dd>
                     <dd class="privacy__tabledata">
-                        <ul class="privacy__list">
+                        <ol class="privacy__list">
                             <li>お客様ご本人の同意がある場合</li>
                             <li>官公署からの要請の場合</li>
                             <li>法律の適用を受ける場合</li>
-                        </ul>
+                        </ol>
                     </dd>
                 </dl>
                 <dl class="introduction__table">
@@ -554,7 +296,6 @@
             // カレンダーを描写
             calendar.render();
         });
-
     </script>
 
 </body>
