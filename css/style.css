@@ -437,14 +437,42 @@ product
   color: #333;
 }
 
+/*
 .product__list {
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
 }
+*/
+
+
+/*
+.product__list {
+  display: flex;
+  list-style-type: none;
+}
+*/
+
+.product__list {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .product__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.product__box {
+  display: flex;
+}
 
 .product__item {
-  width: 50%;
+  /*  width: 50%;*/
   background-color: #f2f2f2;
 }
 
