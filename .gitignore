@@ -1,2 +1,8 @@
+# ファイルを指定する
 .DS_Store
-cssconfig.json
+.stylelintrc.json
+package.json
+package-lock.json
+
+# ディレクトリを指定する
+node_modules/
