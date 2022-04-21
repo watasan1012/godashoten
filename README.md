@@ -431,13 +431,13 @@ URI の値 (url()) には引用符を使用しないでください。
 Node.jsが既にインストールされている必要があります。
 
 ```shell
-$ node -v
+% node -v
 ```
 
 vXX.XX.X などバージョンが表示されなかったら、Node.jsをインストールする。
 
 ```shell
-$ npm -v
+% npm -v
 ```
 
 .git ファイルがあるディレクトリに移動する。(githubのローカルリポジトリ)
@@ -448,16 +448,16 @@ $ npm -v
 $ npm init -y
 ```
 
-### npm パッケージのインストール
+### stylelint本体パッケージのインストール
 
 ```shell
-$ npm install --save-dev stylelint stylelint-config-standard
+% npm i --save-dev stylelint
 ```
 
-### vscode のPrettieと同時に実行したいので以下のコマンドを実行する
+### stylelintの基本設定パッケージのインストール
 
 ```shell
-npm install --save-dev stylelint-config-prettier
+% npm i --save-dev stylelint-config-standard
 ```
 
 ### stylelintの設定ファイルを作成する
@@ -470,7 +470,7 @@ $ touch .stylelintrc.json
 
 ```shell
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-prettier"]
+  "extends": ["stylelint-config-standard"]
 }
 ```
 
@@ -479,6 +479,59 @@ $ touch .stylelintrc.json
 ```shell
 % npx stylelint css/*.css 
 ```
+
+### cssのプロパティ順の並び替えパッケージをインストール
+
+```shell
+npm i --save-dev stylelint-config-recess-order
+```
+
+さきほど作成した.stylelintrc.jsにパッケージ情報を追加します。
+
+```
+{
+  "extends": ["stylelint-config-standard",
+              "stylelint-config-recess-order"
+             ]
+}
+```
+
+## Prettierのインストール
+
+```shell
+% npm i prettier
+```
+
+## Prettieと同時に実行したいので以下のコマンドを実行する
+
+```shell
+% npm i --save-dev stylelint-config-prettier
+```
+
+ルールの競合を干渉しないようにするため
+
+## stylelint-prettier のインストール
+
+```shell
+npm i --save-dev stylelint-prettier
+```
+
+### .stylelintrc.jsの修正
+
+```js
+{
+ "plugins": ["stylelint-order", "stylelint-prettier"],
+  "extends": ["stylelint-config-standard",
+              "stylelint-config-recess-order",
+              "stylelint-config-prettier"
+             ]
+}
+```
+
+
+
+
+
 
 ## .gitignore の作成
 
@@ -503,3 +556,6 @@ node_modules/
 
 stylelint公式ドキュメント
 [https://stylelint.io/user-guide/get-started](https://stylelint.io/user-guide/get-started)
+
+stylelint でcssのプロパティを自動で統一させる方法
+
