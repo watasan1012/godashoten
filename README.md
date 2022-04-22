@@ -1,35 +1,44 @@
 # godashoten.github.io
 
-htmlや、Cascading Style Sheets(以降css)にはルールがあります。ルールに沿ったコーディングを心がける必要があります。
+htmlや、Cascading Style Sheets(以降css)にはルールがあります。ルールに沿ったコーディングを心がける必要があります。Web標準化のルールを作っているグループが存在します。
 
-では、htmlや、cssを制定(作っているグループ)について解説します。
+## htmlや、cssのWeb標準化のルールを作っているグループについて解説します。
 
-htmlや、cssのルールを策定グループに w3c の html5。 WHATWG が制定する、Living Standardがありました。
+htmlや、cssのWeb標準化のルールを作っているグループに w3c の html5。WHATWG が制定する、Living Standardがありました。
 
-制定するグループは、w3c と、WHATWG があり、話し合いの結果、w3cのhtml5は2021年1月28日に廃止されました。
+現在、w3cのhtml5は2021年1月28日に廃止され、今後は、もう一つのグループのWHATWGが制定するLiving Standard(html5)が標準仕様になりました。
 
-結果、もう一つのグループのWHATWGが制定するLiving Standardが標準仕様になりました。
+今後は、新しいタグの追加、廃止されり、変更されるので
 
-今後は、新しいタグなどができたり、廃止されり、変更されるので[Living Standard](https://momdo.github.io/html/)を勉強していくといいでしょう。
+[Living Standard](https://momdo.github.io/html/)
 
-w3c や、WHATWG　のhtml5にはルールに沿ったコーディングができてるかチェックする機能が公開されています。
+を参考にするといいと思います。
+
+WHATWG のhtml5にはルールに沿ったコーディングができてるかチェックする機能が公開されています。
 
 チェックすることを、バリデーションまたは、バリデーターといいます。
 
-htmlでは、w3c[Markup Validation Service](https://validator.w3.org/) とWHATWG[HTML Conformance Checkers](https://whatwg.org/validator/)です。
+なので、localで開発したソースは、
 
-WHATWGのHTML Conformance Checkersは、Address of page to check:にリンクを貼り付けてCheckボタンを押します。
-yahoo などのURLを貼り付けてcheckして見ましょう。
+[Nu Html Checker](https://validator.w3.org/nu/#textarea)
 
-すると[https://validator.w3.org/nu](https://validator.w3.org/nu) 遷移して、チェックが走ります。
+でチェックするといいでしょう。
 
-なので、localで開発したソースは、[https://validator.w3.org/nu/#textarea](https://validator.w3.org/nu/#textarea)でチェックするといいでしょう。
+localで作成したhtml5を、Check by text input下のテキストボックスに入れてCheckボタンを押すことで評価がでます。
 
-css にチェックを入れるとcssも確認できます。
+css にチェックを入れて同様にcssも確認できます。
 
-Google は、Style Guide を出しています。
+### ここまで ###
+
+Google HTML/CSS Style Guideについて
+
+Google は、html cssのStyle Guide を公開しています。
 
 [https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)
+
+javascriptもあります。
+
+[https://google.github.io/styleguide/jsguide.html](https://google.github.io/styleguide/jsguide.html)
 
 2.1.1 Protocol
 
@@ -301,6 +310,9 @@ text-align: center;
 text-indent: 2em;
 ```
 
+cssのチェックをする！
+
+
 プロパティの順番を指定するこ
 
 Cascading Style Sheetsのプロパティの順番はバラバラでもいい？
@@ -474,12 +486,6 @@ $ touch .stylelintrc.json
 }
 ```
 
-### stylelintの実行方法
-
-```shell
-% npx stylelint css/*.css 
-```
-
 ### cssのプロパティ順の並び替えパッケージをインストール
 
 ```shell
@@ -490,9 +496,20 @@ npm i --save-dev stylelint-config-recess-order
 
 ```
 {
-  "extends": ["stylelint-config-standard",
-              "stylelint-config-recess-order"
-             ]
+  "plugins": ["stylelint-order"],
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "width",
+      "height"
+    ],
+    "string-quotes": "single", 
+    "order/properties-alphabetical-order": true
+  }
 }
 ```
 
@@ -528,8 +545,17 @@ npm i --save-dev stylelint-prettier
 }
 ```
 
+### stylelintの実行方法
 
+```shell
+% npx stylelint css/*.css 
+```
 
+実行結果
+
+Expected class selector-class-pattern selector to be kebab-case 
+
+class名は、kebab-case 
 
 
 
