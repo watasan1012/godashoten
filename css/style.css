@@ -897,20 +897,21 @@ seasonalprodindex
 seasonalproduct
 ---------------------------------------- */
 
-
 .seasonalprod {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 3vw;
+/*  padding-right: 3vw;*/
 }
 
 .seasonalprod__sentence {
-  height: 25vw;
-  writing-mode:vertical-rl;
+  height: 400px;
+  writing-mode: vertical-rl;
+  width: 27vw;
+  /* padding-right: 3vw; */
+  margin-right: 3vw;
 }
-
 
 .seasonalprod__img {
   width: 73vw;
@@ -927,27 +928,48 @@ seasonalproduct
 }
 
 .seasonalprod__text {
-  margin-right: 1.7vw;
+  margin-right: 1em;
   font-size: 2rem;
-  line-height: 2.2;
+  line-height: 1.7;
   letter-spacing: .2em;
 }
 
-.seasonalprod__cards {
-  font-size: calc(16/750*100vw);
+.seasonalprod__slider {
   height: calc(660/750*100vw);
-  width: 73vw;
-  height: 40vw;
-  margin-right: 4.2vw;
-  
+  width: 70vw;
+/*  margin-right: 4.2vw;*/
+  visibility: inherit;
+  opacity: 1;
+  display: flex;
 }
+
 
 .seasonalprod__item {
-  
+  width: calc(280em/16);
+  margin: 0 calc(11em/16);
+  flex-shrink: 0;
+  height: 100%;
 }
 
-.seasonalprod__inner {
+.seasonalprod__anchor {
   display: flex;
-  sform: translate3d(0,0,0);
-  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  color: #333;
+}
+
+.seasonalprod__title--three {
+  font-size: calc(24em/16);
+  
+  order: 2;
+  margin-top: 1em;
+  padding: 0 calc(10em/16);
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  line-height: 1.1;
+}
+
+.seasonalprod__image{
+  width: 252px;
+  height: 252px;
 }
