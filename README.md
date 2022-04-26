@@ -503,12 +503,10 @@ npm i --save-dev stylelint-config-recess-order
       "custom-properties",
       "declarations"
     ],
-    "order/properties-order": [
-      "width",
-      "height"
-    ],
     "string-quotes": "single", 
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "selector-class-pattern": null,
+    "font-family-no-missing-generic-family-keyword":true
   }
 }
 ```

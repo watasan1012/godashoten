@@ -154,7 +154,7 @@ hamburger
 
 .hamburger {
   align-items: center;
-  background-color: #fcf5f7;
+  background-color: #fbfaf5;
   border: 0;
   cursor: pointer;
   display: flex;
@@ -217,7 +217,7 @@ gnav
 -------------------- */
 
 .gnav {
-  background-color: #fcf5f7;
+  background-color: #fbfaf5;
   display: none;
   height: 100vh;
   padding-top: 40vw;
@@ -271,7 +271,8 @@ hero
 .hero__image img {
   border: 0;
   border-radius: 20px;
-  max-height: height: auto;
+  height: auto;
+  max-height: 500px;
   max-width: 100%;
   vertical-align: top;
   width: 100%;
@@ -401,7 +402,7 @@ product
 
 .product {
   display: block;
-  padding: 8vw 6vw;
+  padding: 8vw 3vw;
   position: relative;
 }
 
@@ -486,21 +487,18 @@ product
 }
 
 @media screen and (min-width: 768px) {
-
   .product {
-    padding: 21px 5vw 72px 30vw;
+    padding: 21px 10px 72px 30vw;
   }
 
   .product__list {
     display: flex;
     flex-wrap: wrap;
   }
-  #product .product__item {
-  }
+
   .product__item {
     width: 50%;
   }
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -563,8 +561,7 @@ introduction
   align-items: flex-start;
   border-top: 1px solid #333;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   padding: 1.7vw 0;
 }
@@ -630,8 +627,7 @@ privacy
   align-items: flex-start;
   border-top: 1px solid #333;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: flex-start;
   padding: 1.7vw 0;
 }
@@ -702,7 +698,7 @@ footer
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 80px 3vw 80px 30vw;
+    padding: 80px 0vw 80px 30vw;
   }
 
   .footer__link {
@@ -820,4 +816,138 @@ backdecoration
   top: 3040px;
   width: 200px;
 }
+
+/* ----------------------------------------
+seasonalprodindex
+ ---------------------------------------- */
+
+.title__wrap {
+  background: url(../img/img-header-1-min.jpg) no-repeat center center/cover;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  margin-top: 20vw;
+}
+
+.title__inner {
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.title__heading--one {
+  font-size: 3.5rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  white-space: nowrap;
+  animation-name: titlefade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes titlefade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title__wrap {
+    margin-top: 0;
+  }
+  .title__inner {
+    padding-left: 30vw;
+  }
+}
+
+/* breadcrumb */
+
+.breadcrumb__list {
+  list-style-type: none;
+  display: flex;
+  height: 45px;
+  align-items: center;
+}
+
+.breadcrumb__list a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333333;
+  letter-spacing: 0.1em;
+}
+
+.breadcrumb__item + .breadcrumb__item::before{
+  content:">";
+  margin-left: 0.3em;
+}
+
+@media screen and (min-width: 768px) {
+  .breadcrumb__list {
+    padding-left: 30vw;
+  }
+}
+
+/* ----------------------------------------
+seasonalproduct
+---------------------------------------- */
+
+
+.seasonalprod {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 3vw;
+}
+
+.seasonalprod__sentence {
+  height: 25vw;
+  writing-mode:vertical-rl;
+}
+
+
+.seasonalprod__img {
+  width: 73vw;
+  height: 40vw;
+  margin-right: 4vw;
+}
+
+.seasonalprod__title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+.seasonalprod__text {
+  margin-right: 1.7vw;
+  font-size: 2rem;
+  line-height: 2.2;
+  letter-spacing: .2em;
+}
+
+.seasonalprod__cards {
+  font-size: calc(16/750*100vw);
+  height: calc(660/750*100vw);
+  width: 73vw;
+  height: 40vw;
+  margin-right: 4.2vw;
+  
+}
+
+.seasonalprod__item {
+  
+}
+
+.seasonalprod__inner {
+  display: flex;
+  sform: translate3d(0,0,0);
+  height: 100%;
 }
