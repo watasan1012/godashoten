@@ -13,10 +13,7 @@
 
 /* normalize cross-browser */
 
-.fc,
-.fc *,
-.fc *::before,
-.fc *::after {
+.fc, .fc *, .fc *::before, .fc *::after {
   box-sizing: border-box;
 }
 
@@ -234,7 +231,7 @@ content: '';
 
 .fc-daygrid-day-events::before {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 

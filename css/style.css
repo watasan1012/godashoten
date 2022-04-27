@@ -15,7 +15,7 @@ html {
 body {
   background-color: #fbfaf5;
   color: #333;
-  font-family: system-ui, 'Noto Sans JP', sans-serif;
+  font-family: system-ui, "Noto Sans JP", sans-serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.7em;
@@ -23,17 +23,7 @@ body {
   position: relative;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -81,7 +71,7 @@ header
 
 .header__wrapper::after {
   background: #f7f7f3;
-  content: '';
+  content: "";
   display: block;
   height: 0;
   left: 0;
@@ -174,10 +164,9 @@ hamburger
   width: 25px;
 }
 
-.hamburger__line::before,
-.hamburger__line::after {
+.hamburger__line::before, .hamburger__line::after {
   background-color: #000;
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   position: absolute;
@@ -192,16 +181,16 @@ hamburger
   bottom: -8px;
 }
 
-.hamburger[aria-expanded='true'] .hamburger__line {
+.hamburger[aria-expanded="true"] .hamburger__line {
   background: transparent;
 }
 
-.hamburger[aria-expanded='true'] .hamburger__line::before {
+.hamburger[aria-expanded="true"] .hamburger__line::before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.hamburger[aria-expanded='true'] .hamburger__line::after {
+.hamburger[aria-expanded="true"] .hamburger__line::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
@@ -478,7 +467,7 @@ product
 .product__details::after {
   background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   height: 10px;
   position: absolute;
@@ -698,7 +687,7 @@ footer
 
 @media screen and (min-width: 768px) {
   .footer {
-    padding: 80px 0vw 80px 30vw;
+    padding: 80px 0 80px 30vw;
   }
 
   .footer__link {
@@ -721,7 +710,7 @@ backdecoration
   z-index: -99;
 }
 
-.backdecoration *[class*='layer'] {
+.backdecoration *[class*="layer"] {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -730,7 +719,7 @@ backdecoration
   transition: 0.1s cubic-bezier(0.3, 0.85, 0.35, 1);
 }
 
-.backdecoration *[class*='item'] {
+.backdecoration *[class*="item"] {
   border-radius: 300px;
   display: block;
   position: absolute;
@@ -822,36 +811,37 @@ seasonalprodindex
  ---------------------------------------- */
 
 .title__wrap {
-  background: url(../img/img-header-1-min.jpg) no-repeat center center/cover;
+  background: url("../img/img-header-1-min.jpg") no-repeat center center/cover;
   height: 250px;
-  width: 100%;
-  position: relative;
   margin-top: 20vw;
+  position: relative;
+  width: 100%;
 }
 
 .title__inner {
-  transform: translate(-50%, -50%);
   display: inline-block;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .title__heading--one {
-  font-size: 3.5rem;
-  color: #fff;
-  letter-spacing: 0.1em;
-  font-weight: 400;
-  white-space: nowrap;
-  animation-name: titlefade;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  animation-name: titlefade;
+  color: #fff;
+  font-size: 3.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 
 @keyframes titlefade {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -861,6 +851,7 @@ seasonalprodindex
   .title__wrap {
     margin-top: 0;
   }
+
   .title__inner {
     padding-left: 30vw;
   }
@@ -869,21 +860,21 @@ seasonalprodindex
 /* breadcrumb */
 
 .breadcrumb__list {
-  list-style-type: none;
+  align-items: center;
   display: flex;
   height: 45px;
-  align-items: center;
+  list-style-type: none;
 }
 
 .breadcrumb__list a {
-  text-decoration: none;
+  color: #333;
   font-size: 1rem;
-  color: #333333;
   letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
-.breadcrumb__item + .breadcrumb__item::before{
-  content:">";
+.breadcrumb__item + .breadcrumb__item::before {
+  content: ">";
   margin-left: 0.3em;
 }
 
@@ -898,25 +889,23 @@ seasonalproduct
 ---------------------------------------- */
 
 .seasonalprod {
+  align-items: center;
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: center;
-/*  padding-right: 3vw;*/
 }
 
 .seasonalprod__sentence {
   height: 400px;
-  writing-mode: vertical-rl;
-  width: 27vw;
-  /* padding-right: 3vw; */
   margin-right: 3vw;
+  width: 27vw;
+  writing-mode: vertical-rl;
 }
 
 .seasonalprod__img {
-  width: 73vw;
   height: 40vw;
   margin-right: 4vw;
+  width: 73vw;
 }
 
 .seasonalprod__title {
@@ -928,48 +917,69 @@ seasonalproduct
 }
 
 .seasonalprod__text {
-  margin-right: 1em;
   font-size: 2rem;
+  letter-spacing: 0.2em;
   line-height: 1.7;
-  letter-spacing: .2em;
+  margin-right: 1em;
 }
 
 .seasonalprod__slider {
-  height: calc(660/750*100vw);
-  width: 70vw;
-/*  margin-right: 4.2vw;*/
-  visibility: inherit;
-  opacity: 1;
+  align-items: center;
   display: flex;
+  opacity: 1;
+  visibility: inherit;
+  width: 70vw;
 }
 
-
 .seasonalprod__item {
-  width: calc(280em/16);
-  margin: 0 calc(11em/16);
   flex-shrink: 0;
-  height: 100%;
+  margin: 0 calc(11em/16);
+  width: calc(280em/16);
 }
 
 .seasonalprod__anchor {
+  color: #333;
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: #333;
+  text-decoration: none;
 }
 
 .seasonalprod__title--three {
-  font-size: calc(24em/16);
-  
-  order: 2;
-  margin-top: 1em;
-  padding: 0 calc(10em/16);
+  font-size: calc(24em / 16);
   font-weight: 400;
   letter-spacing: 0.15em;
   line-height: 1.1;
+  margin-top: 1em;
+  order: 2;
+  padding: 0 calc(10em / 16);
 }
 
-.seasonalprod__image{
-  width: 252px;
-  height: 252px;
+seasonalprod__title--three:after{
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1px;
 }
+
+.seasonalprod__fig {
+  padding-top: 100%;
+  border-radius: calc(30em/16);
+  overflow: hidden;
+  position: relative;
+  border-radius: calc(30em/16);
+}
+
+.seasonalprod__image {
+  height: 252px;
+  width: 252px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.seasonalprod__slidebody {
+  display: block;
+}
+
+

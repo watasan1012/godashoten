@@ -549,6 +549,10 @@ npm i --save-dev stylelint-prettier
 % npx stylelint css/*.css 
 ```
 
+```shell
+npx stylelint css/*.css --fix
+```
+
 実行結果
 
 Expected class selector-class-pattern selector to be kebab-case 
