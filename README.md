@@ -2,7 +2,7 @@
 
 htmlや、Cascading Style Sheets(以降css)にはルールがあります。ルールに沿ったコーディングを心がける必要があります。Web標準化のルールを作っているグループが存在します。
 
-## htmlや、cssのWeb標準化のルールを作っているグループについて解説します。
+## htmlや、cssのWeb標準化のルールを作っているグループについて解説します  
 
 htmlや、cssのWeb標準化のルールを作っているグループに w3c の html5。WHATWG が制定する、Living Standardがありました。
 
@@ -28,7 +28,7 @@ localで作成したhtml5を、Check by text input下のテキストボックス
 
 css にチェックを入れて同様にcssも確認できます。
 
-### ここまで ###
+□ ここまで  
 
 Google HTML/CSS Style Guideについて
 
@@ -264,7 +264,7 @@ CSSには様々な省略記法のプロパティ（fontなど）があり、明�
 
 1から1までの値または長さの前に0を置く。
 
-```
+```css
 font-size: 0.8em;
 ```
 
@@ -274,7 +274,7 @@ font-size: 0.8em;
 
 可能な限り3文字の16進数で表記することで、より短く、より簡潔な表現が可能になります。
 
-```
+```css
 /* Recommended */
 color: #ebc;
 ```
@@ -311,7 +311,6 @@ text-indent: 2em;
 ```
 
 cssのチェックをする！
-
 
 プロパティの順番を指定するこ
 
@@ -457,7 +456,7 @@ vXX.XX.X などバージョンが表示されなかったら、Node.jsをイン�
 ### package.json の作成　　
 
 ```shell
-$ npm init -y
+% npm init -y
 ```
 
 ### stylelint本体パッケージのインストール
@@ -475,7 +474,7 @@ $ npm init -y
 ### stylelintの設定ファイルを作成する
 
 ```shell
-$ touch .stylelintrc.json
+% touch .stylelintrc.json
 ```
 
 ### .stylelintrc.json の中身は
@@ -494,7 +493,7 @@ npm i --save-dev stylelint-config-recess-order
 
 さきほど作成した.stylelintrc.jsにパッケージ情報を追加します。
 
-```
+```json
 {
   "plugins": ["stylelint-order"],
   "extends": ["stylelint-config-standard"],
@@ -555,11 +554,9 @@ npx stylelint css/*.css --fix
 
 実行結果
 
-Expected class selector-class-pattern selector to be kebab-case 
+Expected class selector-class-pattern selector to be kebab-case  
 
-class名は、kebab-case 
-
-
+class名は、kebab-case  
 
 ## .gitignore の作成
 
@@ -586,4 +583,3 @@ stylelint公式ドキュメント
 [https://stylelint.io/user-guide/get-started](https://stylelint.io/user-guide/get-started)
 
 stylelint でcssのプロパティを自動で統一させる方法
-

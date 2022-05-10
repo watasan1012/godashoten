@@ -34,7 +34,7 @@ $(function () {
     $menutrigger.on('click', function () {
         if (point_header.matches) {
             $gnav.attr('aria-hidden', false).show();
-        } else{
+        } else {
             //対象メニューの展開ステートをfalseにし、labelを「開く」に変更
             $trigger.attr('aria-expanded', false).attr('aria-label', 'メニューを開く');
             //メニューのhiddenステートをtrueにしてメニューを閉じる

@@ -13,7 +13,10 @@
 
 /* normalize cross-browser */
 
-.fc, .fc *, .fc *::before, .fc *::after {
+.fc,
+.fc *,
+.fc *::before,
+.fc *::after {
   box-sizing: border-box;
 }
 

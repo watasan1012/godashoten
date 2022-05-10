@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     'use strict';
     // scrollイベントを設定
     window.addEventListener('scroll', () => {
-        
+
         winScrollTop = this.scrollY;
         var ariaHidden = document.getElementById('gnav').getAttribute('aria-hidden');
 

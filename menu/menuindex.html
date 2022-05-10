@@ -37,7 +37,8 @@
   <header class="header__wrapper">
     <div class="header__inner">
       <a href="../index.html#hero" class="header__logo"><img src="../img/common_logo.svg" alt="江田商店"></a>
-      <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false" tabindex="1" accesskey="m">
+      <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false"
+        tabindex="1" accesskey="m">
         <span class="hamburger__line" aria-hidden="true"></span>
       </button>
       <nav id="gnav" class="gnav" aria-label="メインメニュー" aria-hidden="true">
@@ -72,26 +73,160 @@
           初夏に美味しい。<br>和菓子の商品を集めました。
         </p>
       </div>
-      <div class="seasonalprod__slider">
-        <div class="seasonalprod__slidebody">
-          <div class="seasonalprod__item">
-            <a href="" class="seasonalprod__anchor">
-              <h3 class="seasonalprod__title--three">鬼かりんとう</h3>
-              <p>販売期間:【5月中旬~6月下旬】</p>
-              <a href="./menu/menuindex.html" class="product__details">詳細はこちら</a>
-              <figure class="seasonalprod__fig"><img class="seasonalprod__image" src="../img/img-onikarintou-min.jpg" alt="鬼かりんとう"></figure>
-            </a>
+      <!-- ./seasonal__slider -->
+
+      <div class="seasonal__slider" id="seasonalslider">
+        <div class="slider__wrapper">
+          <div class="slider__list" id="sliderscroll" aria-live="polite">
+            <!-- slider__item-active -->
+            <!-- slider__item-prev -->
+            <!-- なし -->
+
+            <div class="slider__item" role="group" aria-label="1 / 6">
+              <a href="#1" class="cm-products__itemTarget">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/koro-koro.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/koro-koro.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/koro-koro.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody"
+                    alt="コロコロの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">コロコロ</span>
+                  <span class="en u-en is-bold">KORO-KORO</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  木の鈴
+                </p>
+              </a>
+            </div>
+            <!-- slider__item-next -->
+            <!-- slider__item-active -->
+            <!-- slider__item-prev -->
+            <!-- なし -->
+            <div class="slider__item" role="group" aria-label="2 / 6">
+              <a href="https://mori-no-oto.com/watashino-mori-no-oto/kachi-kachi/"
+                class="cm-products__itemTarget c-target">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/kachi-kachi.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/kachi-kachi.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/kachi-kachi.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody c-img__body"
+                    alt="カチカチの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">カチカチ</span>
+                  <span class="en u-en is-bold">KACHI-KACHI</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  カスタネット
+                </p>
+              </a>
+            </div>
+            <!-- なし -->
+            <!-- slider__item-next -->
+            <!-- slider__item-active -->
+            <!-- slider__item-prev -->
+            <!-- なし -->
+            <div class="slider__item" role="group" aria-label="3 / 6">
+              <a href="https://mori-no-oto.com/watashino-mori-no-oto/shaka-shaka/"
+                class="cm-products__itemTarget c-target">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/shaka-shaka.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/shaka-shaka.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/shaka-shaka.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody c-img__body"
+                    alt="シャカシャカの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">シャカシャカ</span>
+                  <span class="en u-en is-bold">SHAKA-SHAKA</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  シェイカー
+                </p>
+              </a>
+            </div>
+            <!-- なし -->
+            <!-- なし -->
+            <!-- slider__item-next -->
+            <!-- slider__item-active -->
+            <!-- slider__item-prev -->
+            <!-- なし -->
+            <div class="slider__item" role="group" aria-label="4 / 6">
+              <a href="https://mori-no-oto.com/watashino-mori-no-oto/morino-otohajime/"
+                class="cm-products__itemTarget c-target">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/morino-otohajime.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/morino-otohajime.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/morino-otohajime.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody c-img__body"
+                    alt="森のオトハジメの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">森のオトハジメ</span>
+                  <span class="en u-en is-bold">MORINO-OTOHAJIME</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  コロコロ・カチカチ・シャカシャカ<br class="br">の3点セット
+                </p>
+              </a>
+            </div>
+
+            <div class="slider__item" role="group" aria-label="5 / 6">
+              <a href="https://mori-no-oto.com/watashino-mori-no-oto/wood-kazoo/"
+                class="cm-products__itemTarget c-target">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/wood-kazoo.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/wood-kazoo.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/wood-kazoo.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody c-img__body"
+                    alt="ウッドカズーの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">ウッドカズー</span>
+                  <span class="en u-en is-bold">WOOD KAZOO</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  声が楽器に変わる不思議な笛
+                </p>
+              </a>
+            </div>
+
+            <div class="slider__item" role="group" aria-label="6 / 6">
+              <a href="https://mori-no-oto.com/watashino-mori-no-oto/wood-kazoo-colors/"
+                class="cm-products__itemTarget c-target">
+                <figure class="cm-products__itemTargetImg c-target__img c-img">
+                  <img
+                    src="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/wood-kazoo-colors.jpg"
+                    srcset="https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/wood-kazoo-colors.jpg 1x, https://mori-no-oto.com/wp-content/themes/2020/assets/images/products/watashino-mori-no-oto/2x/wood-kazoo-colors.jpg 2x"
+                    width="294" height="294" decoding="async" data-loaded="true" class="c-target__imgBody c-img__body"
+                    alt="ウッドカズーカラーズの写真">
+                </figure>
+                <h3 class="cm-products__itemTargetTitle">
+                  <span class="jp">ウッドカズー<br class="br">カラーズ</span>
+                  <span class="en u-en is-bold">WOOD KAZOO</span>
+                </h3>
+                <p class="cm-products__itemTargetTxt">
+                  声が楽器に変わる不思議な笛
+                </p>
+              </a>
+            </div>
           </div>
         </div>
+
+
+        <ul class="slidernavi">
+          <li>
+            <button type="button" aria-disabled="true" id="seasonalsliderbtnprev">&lt;</button>
+            <!-- aria-disabled=true ボタン非活性 -->
+          </li>
+          <li>
+            <button type="button" aria-disabled="false" id="seasonalsliderbtnnext">&gt;</button>
+          </li>
+        </ul>
       </div>
-
     </div>
-
-
-
-
-
-
   </main>
   <footer class="footer">
     <a href="#hero" class="footer__link">
@@ -120,6 +255,7 @@
   <script src="../js/scroll.js"></script>
   <script src="../js/hamburger.js"></script>
   <script src="../js/background.js"></script>
+  <script src="../js/seasonalslider.js"></script>
 
 </body>
 
