@@ -3,11 +3,11 @@ const nextbtnelement = document.getElementById('seasonalsliderbtnnext');
 // 前へボタン
 const prevbtnelement = document.getElementById('seasonalsliderbtnprev');
 // card ttl num
-const cordttlnumelement = document.getElementsByClassName('slider__item').length;
+const cordttlnumelement = document.getElementsByClassName('seasonalslider__item').length;
 // cardnumoneminus 
 let cardnum = cordttlnumelement - 1;
 // カードサイズ
-let cardwidthelement = document.querySelector(".slider__item").clientWidth;
+let cardwidthelement = document.querySelector(".seasonalslider__item").clientWidth;
 // カードサイズ + 横幅を作る
 let cardouterframe = cardwidthelement + 10;
 // カウント
@@ -21,8 +21,8 @@ const cardlistelement = document.getElementById('sliderscroll');
 
 nextbtnelement.addEventListener('click', () => {
   if (count < cardnum) {
-    prevbtnelement.setAttribute('aria-disabled', 'false');
     count++;
+    prevbtnelement.setAttribute('aria-disabled', 'false');
     cardlistelement.style.transform = "translateX(" + -(cardouterframe * count) + "px)";
     cardlistelement.style.transitionDuration = '600ms';
   } else {
@@ -32,8 +32,8 @@ nextbtnelement.addEventListener('click', () => {
 
 prevbtnelement.addEventListener('click', () => {
   if (count > 0) {
-    nextbtnelement.setAttribute('aria-disabled', 'false');
     count--;
+    nextbtnelement.setAttribute('aria-disabled', 'false');
     cardlistelement.style.transform = "translateX(" + -(cardouterframe * count) + "px)";
     cardlistelement.style.transitionDuration = '600ms';
   } else {

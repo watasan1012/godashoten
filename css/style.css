@@ -932,26 +932,27 @@ seasonalproduct
   margin-right: 1vw;
 }
 
-/* seasonal__slider */
+/* seasonalslider */
 
-.seasonal__slider {
+.seasonalslider {
   width: 70vw;
 }
 
 @media screen and (min-width: 768px) {
-  .seasonal__slider {
+  .seasonalslider {
     width: 50vw;
   }
 }
 
-.slider__wrapper {
+.seasonalslider__wrapper {
   overflow-x: scroll;
 }
 
-.slider__list {
+.seasonalslider__list {
   display: flex;
-  transform: translate3d(0, 0, 0);
+  transform: translateX(0);
   transition-duration: 0ms;
+  align-items: baseline;
 }
 
 @media screen and (min-width: 768px) {
@@ -961,77 +962,56 @@ seasonalproduct
   }
 }
 
-/* 影響 */
-
-.slider__item {
+.seasonalslider__item {
   flex-shrink: 0;
   margin-right: 10px;
+  margin-bottom: 0.5em;
   width: calc(280em / 16);
+  align-items:stretch;  
 }
 
-/* 影響 */
-
-.slider__item:last-child {
+.seasonalslider__item:last-child {
   margin-right: 0;
 }
 
-/* 影響 */
-
 @media screen and (min-width: 768px) {
-  .slider__item {
+  .seasonalcatchslider__item {
     width: calc(350em / 16);
   }
 }
 
-.cm-products__itemTarget {
-  display: flex;
-  flex-direction: column;
+.seasonalslider__link {
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  text-align: center;*/
   text-align: center;
 }
 
-.cm-products__itemTarget:hover figure img {
+.seasonalslider__link:hover figure img {
   transform: scale(1.1);
 }
 
-.cm-products__itemTargetTitle {
+.seasonalslider__pic img{
+height: auto;
+max-width: 100%;
+opacity: 1;
+transition: opacity 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.seasonalslider__title-third {
   font-size: 0.9em;
   font-weight: 400;
   margin-top: 1em;
   padding: 0 calc(10em / 6);
 }
 
-.cm-products__itemTargetTitle::after {
-  background-color: #1a1a1a;
-  content: "";
+.seasonalslider__title-third > span{
   display: block;
-  height: 1px;
-  margin: 1em auto 0;
-  width: 1em;
+  flex-grow: 1;
 }
 
-/* 影響 */
-
-.slider .jp {
-  display: block;
-  font-size: calc(24em / 16);
-  font-weight: 400;
-  letter-spacing: 0.15em;
-  line-height: 1.1;
-}
-
-/* 影響 */
-
-.slider .en {
-  display: block;
-  font-size: 0.9em;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  line-height: 1.4;
-  margin-top: calc(8em / 16);
-}
-
-.cm-products__itemTargetImg {
-  border-radius: calc(30em / 16);
+.seasonalslider__pic {
+  border-radius: 20px;
   line-height: 0;
   overflow: hidden;
   position: relative;
@@ -1089,4 +1069,30 @@ seasonalproduct
 .slidernavi > li > button[aria-disabled="true"] {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.seasonalslider__details {
+  align-items: center;
+  border: 1px solid #212121;
+  display: flex;
+  font-size: 1.7rem;
+  height: 60px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  
+}
+.seasonalslider__details::after {
+background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
+bottom: 0;
+content: "";
+display: block;
+height: 10px;
+position: absolute;
+right: 0;
+width: 10px;
 }
