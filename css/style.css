@@ -467,12 +467,8 @@ product
   font-size: 1.7rem;
   height: 60px;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
   overflow: hidden;
   position: relative;
-  width: 100%;
 }
 
 .product__details::after {
@@ -819,7 +815,7 @@ backdecoration
 
 /* ----------------------------------------
 seasonalprodindex
- ---------------------------------------- */
+---------------------------------------- */
 
 .title__wrap {
   background: url("../img/img-header-1-min.jpg") no-repeat center center / cover;
@@ -904,17 +900,22 @@ seasonalproduct
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-top: 5%;
   margin-left: 3vw;
   margin-right: 3vw;
 }
 
+@media screen and (min-width: 768px) {
+  .seasonalprod {
+    margin-left: 30vw;
+    width: 70vw;
+  }
+}
+
 .seasonalprod__sentence {
   height: 400px;
+  margin-left: 1em;
   width: 20%;
   writing-mode: vertical-rl;
-  margin-right: 1em;
-  margin-left: 1em;
 }
 
 .seasonalprod__title {
@@ -932,118 +933,92 @@ seasonalproduct
   margin-right: 1vw;
 }
 
-/* seasonalslider */
+/* scrollingcarousel */
 
-.seasonalslider {
+.scrollingcarousel {
   width: 70vw;
 }
 
 @media screen and (min-width: 768px) {
-  .seasonalslider {
+  .scrollingcarousel {
     width: 50vw;
   }
 }
 
-.seasonalslider__wrapper {
+.scrollingcarousel__wrapper {
   overflow-x: scroll;
+  padding-bottom: 15px;
 }
 
-.seasonalslider__list {
+.scrollingcarousel__list {
   display: flex;
   transform: translateX(0);
   transition-duration: 0ms;
-  align-items: baseline;
+  list-style-type: none;
 }
 
-@media screen and (min-width: 768px) {
-  .seasonalprod {
-    margin-left: 30vw;
-    width: 70vw;
-  }
-}
-
-.seasonalslider__item {
-  flex-shrink: 0;
+.scrollingcarousel__item {
+  display: flex;
+  flex-direction: column;
   margin-right: 10px;
-  margin-bottom: 0.5em;
-  width: calc(280em / 16);
-  align-items:stretch;  
 }
 
-.seasonalslider__item:last-child {
+.scrollingcarousel__item:last-child {
   margin-right: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .seasonalcatchslider__item {
-    width: calc(350em / 16);
-  }
-}
-
-.seasonalslider__link {
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  text-align: center;*/
-  text-align: center;
-}
-
-.seasonalslider__link:hover figure img {
+.scrollingcarousel__item:hover p img {
   transform: scale(1.1);
 }
 
-.seasonalslider__pic img{
-height: auto;
-max-width: 100%;
-opacity: 1;
-transition: opacity 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-
-.seasonalslider__title-third {
-  font-size: 0.9em;
-  font-weight: 400;
-  margin-top: 1em;
-  padding: 0 calc(10em / 6);
-}
-
-.seasonalslider__title-third > span{
-  display: block;
-  flex-grow: 1;
-}
-
-.seasonalslider__pic {
+.scrollingcarousel__photo {
   border-radius: 20px;
   line-height: 0;
   overflow: hidden;
   position: relative;
 }
 
-.c-target__imgBody {
-  height: auto;
-  max-width: 100%;
-  opacity: 1;
-  transition: opacity 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+.scrollingcarousel__photo img {
+  height: 256px;
+  transition: 1s all;
+  width: 256px;
 }
 
-.cm-itemsslider__nav {
-  display: flex;
-  justify-content: space-between;
-  margin: calc(50em / 16) calc(27 / 650 * 100%) 0 0;
-  padding: 0 calc(11em / 16);
+.scrollingcarousel__title {
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+  margin-top: 0.7em;
+  text-align: center;
 }
 
-.swiper-pagination {
+.scrollingcarousel__txt {
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+  margin-top: 0.1em;
+  text-align: center;
+}
+
+.scrollingcarousel__btn {
   align-items: center;
+  border: 1px solid #212121;
   display: flex;
-  font-size: calc(18em / 16);
-  position: static;
-  text-align: left;
+  font-size: 1.7rem;
+  height: 60px;
+  justify-content: center;
+  margin-top: auto;
+  position: relative;
 }
 
-.line {
-  background-color: #333;
-  height: 1px;
-  margin: 0 calc(16em / 28);
-  width: calc(30em / 28);
+.scrollingcarousel__btn::after {
+  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 10px;
 }
 
 .slidernavi {
@@ -1069,30 +1044,4 @@ transition: opacity 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955), transform 0.4s
 .slidernavi > li > button[aria-disabled="true"] {
   opacity: 0.4;
   pointer-events: none;
-}
-
-.seasonalslider__details {
-  align-items: center;
-  border: 1px solid #212121;
-  display: flex;
-  font-size: 1.7rem;
-  height: 60px;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 300px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  
-}
-.seasonalslider__details::after {
-background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
-bottom: 0;
-content: "";
-display: block;
-height: 10px;
-position: absolute;
-right: 0;
-width: 10px;
 }
