@@ -913,8 +913,11 @@ seasonalproduct
 
 .seasonalprod__sentence {
   height: 400px;
-  margin-left: 1em;
-  width: 20%;
+/*
+  width: 13vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
+*/
   writing-mode: vertical-rl;
 }
 
@@ -936,7 +939,9 @@ seasonalproduct
 /* scrollingcarousel */
 
 .scrollingcarousel {
-  width: 70vw;
+  width: 65vw;
+  margin-right: 1vw;
+  margin-left: 1vw;
 }
 
 @media screen and (min-width: 768px) {
