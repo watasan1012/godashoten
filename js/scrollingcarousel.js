@@ -19,6 +19,9 @@ const cardchangepoint = document.querySelector(".scrollingcarousel__list");
 //let nextgattribute = nextbtn.getAttribute('aria-disabled');
 //let prevgattribute = prevbtn.getAttribute('aria-disabled');
 
+/* スクロール量が知りたい */
+//scrollingcarousel__list
+
 nextbtn.addEventListener('click', () => {
   if (count < cardnum) {
     count++;
