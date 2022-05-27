@@ -919,6 +919,8 @@ seasonalproduct
   margin-left: 1vw;
 */
   writing-mode: vertical-rl;
+  width: 30%;
+  margin-right: 10%;
 }
 
 .seasonalprod__title {
@@ -939,15 +941,10 @@ seasonalproduct
 /* scrollingcarousel */
 
 .scrollingcarousel {
-  width: 65vw;
-  margin-right: 1vw;
-  margin-left: 1vw;
-}
-
-@media screen and (min-width: 768px) {
-  .scrollingcarousel {
-    width: 50vw;
-  }
+/*  width: 65vw;*/
+  width: 70%;
+/*  margin-right: 1vw;*/
+/*  margin-left: 1vw;*/
 }
 
 .scrollingcarousel__wrapper {
