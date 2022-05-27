@@ -913,14 +913,11 @@ seasonalproduct
 
 .seasonalprod__sentence {
   height: 400px;
-/*
-  width: 13vw;
-  margin-right: 1vw;
-  margin-left: 1vw;
-*/
   writing-mode: vertical-rl;
   width: 30%;
-  margin-right: 10%;
+  /* padding-right: 10%; */
+  padding-right: 20px;
+  padding-left: 1%;
 }
 
 .seasonalprod__title {
