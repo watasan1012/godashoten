@@ -898,27 +898,29 @@ seasonalproduct
 .seasonalprod {
   align-items: center;
   display: flex;
-/*  flex-direction: row-reverse;*/
+
+  /*  flex-direction: row-reverse; */
   justify-content: flex-end;
-  width: 100vw;
   padding-left: 3vw;
   padding-right: 3vw;
+  width: 100vw;
 }
 
 @media screen and (min-width: 768px) {
   .seasonalprod {
     margin-left: 30vw;
-    width: 70vw;
     padding-left: 0;
     padding-right: 0;
+    width: 70vw;
   }
 }
 
 .seasonalprod__sentence {
   height: 400px;
-  writing-mode: vertical-lr;
   width: 30%;
-/*  padding-left: 5%;*/
+  writing-mode: vertical-lr;
+
+  /*  padding-left: 5%; */
 }
 
 .seasonalprod__title {
@@ -933,16 +935,19 @@ seasonalproduct
   font-size: 2rem;
   letter-spacing: 0.2em;
   line-height: 1.7;
-/*  margin-left: 3%;*/
-/*  margin-right: 3%;*/
+
+  /*  margin-left: 3%; */
+
+  /*  margin-right: 3%; */
 }
 
 /* scrollingcarousel */
 
 .scrollingcarousel {
-/*  width: 65vw;*/
-  width: 70%;
   padding-right: 3vw;
+
+  /*  width: 65vw; */
+  width: 70%;
 }
 
 .scrollingcarousel__wrapper {
@@ -952,9 +957,9 @@ seasonalproduct
 
 .scrollingcarousel__list {
   display: flex;
+  list-style-type: none;
   transform: translateX(0);
   transition-duration: 0ms;
-  list-style-type: none;
 }
 
 .scrollingcarousel__item {
