@@ -216,45 +216,45 @@
   vertical-align: middle;
 }
 
-.fc .fc-button-group>.fc-button {
+.fc .fc-button-group > .fc-button {
   flex: 1 1 auto;
   position: relative;
 }
 
-.fc .fc-button-group>.fc-button:hover {
+.fc .fc-button-group > .fc-button:hover {
   z-index: 1;
 }
 
-.fc .fc-button-group>.fc-button:focus {
+.fc .fc-button-group > .fc-button:focus {
   z-index: 1;
 }
 
-.fc .fc-button-group>.fc-button:active {
+.fc .fc-button-group > .fc-button:active {
   z-index: 1;
 }
 
-.fc .fc-button-group>.fc-button.fc-button-active {
+.fc .fc-button-group > .fc-button.fc-button-active {
   z-index: 1;
 }
 
-.fc-direction-ltr .fc-button-group>.fc-button:not(:first-child) {
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
 }
 
-.fc-direction-ltr .fc-button-group>.fc-button:not(:last-child) {
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
 
-.fc-direction-rtl .fc-button-group>.fc-button:not(:first-child) {
+.fc-direction-rtl .fc-button-group > .fc-button:not(:first-child) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   margin-right: -1px;
 }
 
-.fc-direction-rtl .fc-button-group>.fc-button:not(:last-child) {
+.fc-direction-rtl .fc-button-group > .fc-button:not(:last-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -279,11 +279,11 @@
   margin: 0;
 }
 
-.fc-direction-ltr .fc-toolbar>*> :not(:first-child) {
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
   margin-left: 0.75em;
 }
 
-.fc-direction-rtl .fc-toolbar>*> :not(:first-child) {
+.fc-direction-rtl .fc-toolbar > * > :not(:first-child) {
   margin-right: 0.75em;
 }
 
@@ -317,7 +317,7 @@
   height: 100%;
 }
 
-.fc-direction-rtl .fc-scroller-harness>.fc-scroller {
+.fc-direction-rtl .fc-scroller-harness > .fc-scroller {
   direction: rtl;
 }
 
@@ -351,7 +351,7 @@
   height: 1px;
 }
 
-.fc .fc-scrollgrid-section>td {
+.fc .fc-scrollgrid-section > td {
   height: 1px;
 }
 
@@ -359,17 +359,17 @@
   height: 1px;
 }
 
-.fc .fc-scrollgrid-section-liquid>td {
+.fc .fc-scrollgrid-section-liquid > td {
   height: 100%;
 }
 
-.fc .fc-scrollgrid-section>* {
+.fc .fc-scrollgrid-section > * {
   border-left-width: 0;
   border-top-width: 0;
 }
 
-.fc .fc-scrollgrid-section-header>*,
-.fc .fc-scrollgrid-section-footer>* {
+.fc .fc-scrollgrid-section-header > *,
+.fc .fc-scrollgrid-section-footer > * {
   border-bottom-width: 0;
 }
 
@@ -381,21 +381,21 @@
   border-bottom-style: hidden;
 }
 
-.fc .fc-scrollgrid-section-sticky>* {
+.fc .fc-scrollgrid-section-sticky > * {
   background: #fff;
   z-index: 3;
 }
 
-.fc .fc-list-table tr>* {
+.fc .fc-list-table tr > * {
   border-left: 0;
   border-right: 0;
 }
 
-.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky>* {
+.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky > * {
   top: 0;
 }
 
-.fc .fc-scrollgrid-section-footer.fc-scrollgrid-section-sticky>* {
+.fc .fc-scrollgrid-section-footer.fc-scrollgrid-section-sticky > * {
   bottom: 0;
 }
 
@@ -413,7 +413,7 @@
   position: relative;
 }
 
-.fc .fc-view-harness-active>.fc-view {
+.fc .fc-view-harness-active > .fc-view {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -1074,7 +1074,7 @@ a.fc-event:hover {
   position: relative;
 }
 
-.fc .fc-timegrid-axis-chunk>table {
+.fc .fc-timegrid-axis-chunk > table {
   position: relative;
   z-index: 1;
 }
@@ -1167,7 +1167,7 @@ a.fc-event:hover {
   top: 0;
 }
 
-.fc-media-screen .fc-timegrid-cols>table {
+.fc-media-screen .fc-timegrid-cols > table {
   height: 100%;
 }
 
@@ -1241,7 +1241,7 @@ a.fc-event:hover {
   margin-bottom: 1px;
 }
 
-.fc-timegrid-event-harness>.fc-timegrid-event {
+.fc-timegrid-event-harness > .fc-timegrid-event {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -1348,7 +1348,7 @@ a.fc-event:hover {
   width: 100%;
 }
 
-.fc .fc-list-sticky .fc-list-day>* {
+.fc .fc-list-sticky .fc-list-day > * {
   background: #fff;
   position: sticky;
   top: 0;
@@ -1363,7 +1363,7 @@ a.fc-event:hover {
   padding: 0;
 }
 
-.fc .fc-list-table tbody>tr:first-child th {
+.fc .fc-list-table tbody > tr:first-child th {
   border-top: 0;
 }
 

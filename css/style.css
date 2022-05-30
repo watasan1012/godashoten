@@ -972,6 +972,12 @@ seasonalproduct
   margin-right: 0;
 }
 
+.scrollingcarousel__photo img {
+  height: 256px;
+  transition: 1s all;
+  width: 256px;
+}
+
 .scrollingcarousel__item:hover p img {
   transform: scale(1.1);
 }
@@ -981,12 +987,6 @@ seasonalproduct
   line-height: 0;
   overflow: hidden;
   position: relative;
-}
-
-.scrollingcarousel__photo img {
-  height: 256px;
-  transition: 1s all;
-  width: 256px;
 }
 
 .scrollingcarousel__title {
