@@ -1,15 +1,4 @@
 /* calender */
-.fc-not-allowed {
-  cursor: not-allowed;
-}
-
-.fc-not-allowed .fc-event {
-  cursor: not-allowed;
-}
-
-.fc-unselectable {
-  user-select: none;
-}
 
 .fc {
   display: flex;
@@ -24,20 +13,230 @@
   box-sizing: border-box;
 }
 
+.fc-direction-ltr {
+  background-color: white;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  direction: ltr;
+  text-align: left;
+}
+
+.fc .fc-toolbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+.fc .fc-toolbar-title {
+  font-size: 1.75em;
+  margin: 0;
+}
+
+.fc .fc-view-harness {
+  flex-grow: 1;
+  position: relative;
+}
+
 .fc table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 1em;
 }
 
-.fc th {
-  text-align: center;
+.fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #ddd;
 }
 
-.fc th,
+.fc .fc-scrollgrid {
+  border-bottom-width: 0;
+  border-collapse: separate;
+  border-right-width: 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.fc .fc-scrollgrid-section {
+  height: 1px;
+}
+
+.fc th {
+  padding: 0;
+  text-align: center;
+  vertical-align: top;
+}
+
+.fc-theme-standard th {
+  border: 1px solid #ddd;
+}
+
+.fc .fc-scrollgrid-section > * {
+  border-left-width: 0;
+  border-top-width: 0;
+}
+
+.fc .fc-scrollgrid-section-header > * {
+  border-bottom-width: 0;
+}
+
+.fc .fc-scrollgrid-section-sticky > * {
+  background: #fff;
+  z-index: 3;
+}
+
+.fc .fc-scrollgrid-section-footer > * {
+  border-bottom-width: 0;
+}
+
+.fc .fc-list-table tr > * {
+  border-left: 0;
+  border-right: 0;
+}
+
+.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky > * {
+  top: 0;
+}
+
+.fc .fc-scroller-harness {
+  direction: ltr;
+  overflow: hidden;
+  position: relative;
+}
+
+.fc .fc-scroller {
+  position: relative;
+}
+
+.fc .fc-scrollgrid table {
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-top-style: hidden;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.fc .fc-scrollgrid-section table {
+  height: 1px;
+}
+
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+}
+
 .fc td {
   padding: 0;
   vertical-align: top;
+}
+
+.fc-theme-standard td {
+  border: 1px solid #ddd;
+}
+
+.fc-liquid-hack td {
+  position: relative;
+}
+
+.fc .fc-scrollgrid-section > td {
+  height: 1px;
+}
+
+.fc .fc-daygrid-body {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.fc .fc-scrollgrid-section-body table {
+  border-bottom-style: hidden;
+}
+
+.fc .fc-daygrid-day-frame {
+  min-height: 100%;
+  position: relative;
+}
+
+.fc-daygrid-day-frame::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fc .fc-daygrid-day-top {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fc .fc-daygrid-day-number {
+  padding: 4px;
+  position: relative;
+  z-index: 4;
+}
+
+.fc .fc-daygrid-day-events {
+  margin-top: 1px;
+}
+
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
+  min-height: 2em;
+  position: relative;
+}
+
+.fc .fc-daygrid-body-natural .fc-daygrid-day-events {
+  margin-bottom: 1em;
+}
+
+.fc-daygrid-day-events::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fc .fc-daygrid-day-bottom {
+  font-size: 0.85em;
+  padding: 2px 3px 0;
+}
+
+.fc .fc-daygrid-day-bottom::before {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fc-daygrid-day-events::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fc-daygrid-day-frame::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: rgb(255 220 40 / 15%);
+}
+
+.fc .fc-day-other .fc-daygrid-day-top {
+  opacity: 0.3;
+}
+
+.fc-not-allowed {
+  cursor: not-allowed;
+}
+
+.fc-not-allowed .fc-event {
+  cursor: not-allowed;
+}
+
+.fc-unselectable {
+  user-select: none;
 }
 
 .fc a[data-navlink] {
@@ -48,29 +247,9 @@
   text-decoration: underline;
 }
 
-.fc-direction-ltr {
-  background-color: white;
-  border-top-left-radius: 2vw;
-  border-top-right-radius: 2vw;
-  direction: ltr;
-  text-align: left;
-}
-
 .fc-direction-rtl {
   direction: rtl;
   text-align: right;
-}
-
-.fc-theme-standard td {
-  border: 1px solid #ddd;
-}
-
-.fc-theme-standard th {
-  border: 1px solid #ddd;
-}
-
-.fc-liquid-hack td {
-  position: relative;
 }
 
 .fc-liquid-hack th {
@@ -259,24 +438,8 @@
   border-top-left-radius: 0;
 }
 
-.fc .fc-toolbar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.fc .fc-toolbar.fc-header-toolbar {
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-}
-
 .fc .fc-toolbar.fc-footer-toolbar {
   margin-top: 1.5em;
-}
-
-.fc .fc-toolbar-title {
-  font-size: 1.75em;
-  margin: 0;
 }
 
 .fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
@@ -291,10 +454,6 @@
   flex-direction: row-reverse;
 }
 
-.fc .fc-scroller {
-  position: relative;
-}
-
 .fc .fc-scroller-liquid {
   height: 100%;
 }
@@ -307,12 +466,6 @@
   top: 0;
 }
 
-.fc .fc-scroller-harness {
-  direction: ltr;
-  overflow: hidden;
-  position: relative;
-}
-
 .fc .fc-scroller-harness-liquid {
   height: 100%;
 }
@@ -321,78 +474,16 @@
   direction: rtl;
 }
 
-.fc-theme-standard .fc-scrollgrid {
-  border: 1px solid #ddd;
-}
-
-.fc .fc-scrollgrid,
-.fc .fc-scrollgrid table {
-  table-layout: fixed;
-  width: 100%;
-}
-
-.fc .fc-scrollgrid table {
-  border-left-style: hidden;
-  border-right-style: hidden;
-  border-top-style: hidden;
-}
-
-.fc .fc-scrollgrid {
-  border-bottom-width: 0;
-  border-collapse: separate;
-  border-right-width: 0;
-}
-
 .fc .fc-scrollgrid-liquid {
   height: 100%;
-}
-
-.fc .fc-scrollgrid-section {
-  height: 1px;
-}
-
-.fc .fc-scrollgrid-section > td {
-  height: 1px;
-}
-
-.fc .fc-scrollgrid-section table {
-  height: 1px;
 }
 
 .fc .fc-scrollgrid-section-liquid > td {
   height: 100%;
 }
 
-.fc .fc-scrollgrid-section > * {
-  border-left-width: 0;
-  border-top-width: 0;
-}
-
-.fc .fc-scrollgrid-section-header > *,
-.fc .fc-scrollgrid-section-footer > * {
-  border-bottom-width: 0;
-}
-
-.fc .fc-scrollgrid-section-body table {
-  border-bottom-style: hidden;
-}
-
 .fc .fc-scrollgrid-section-footer table {
   border-bottom-style: hidden;
-}
-
-.fc .fc-scrollgrid-section-sticky > * {
-  background: #fff;
-  z-index: 3;
-}
-
-.fc .fc-list-table tr > * {
-  border-left: 0;
-  border-right: 0;
-}
-
-.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky > * {
-  top: 0;
 }
 
 .fc .fc-scrollgrid-section-footer.fc-scrollgrid-section-sticky > * {
@@ -408,22 +499,12 @@
   position: sticky;
 }
 
-.fc .fc-view-harness {
-  flex-grow: 1;
-  position: relative;
-}
-
 .fc .fc-view-harness-active > .fc-view {
   bottom: 0;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
-}
-
-.fc .fc-col-header-cell-cushion {
-  display: inline-block;
-  padding: 2px 4px;
 }
 
 .fc .fc-non-business {
@@ -758,31 +839,7 @@ a.fc-event:hover {
   background: rgb(208 208 208 / 30%);
 }
 
-.fc-daygrid-day-frame::before {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.fc-daygrid-day-events::before {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 .fc-daygrid-event-harness::before {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.fc-daygrid-day-frame::after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
-.fc-daygrid-day-events::after {
   clear: both;
   content: "";
   display: table;
@@ -794,53 +851,10 @@ a.fc-event:hover {
   display: table;
 }
 
-.fc .fc-daygrid-body {
-  background-color: white;
-  position: relative;
-  z-index: 1;
-}
-
-.fc .fc-daygrid-day.fc-day-today {
-  background-color: rgb(255 220 40 / 15%);
-}
-
-.fc .fc-daygrid-day-frame {
-  min-height: 100%;
-  position: relative;
-}
-
-.fc .fc-daygrid-day-top {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.fc .fc-day-other .fc-daygrid-day-top {
-  opacity: 0.3;
-}
-
-.fc .fc-daygrid-day-number {
-  padding: 4px;
-  position: relative;
-  z-index: 4;
-}
-
-.fc .fc-daygrid-day-events {
-  margin-top: 1px;
-}
-
 .fc .fc-daygrid-body-balanced .fc-daygrid-day-events {
   left: 0;
   position: absolute;
   right: 0;
-}
-
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
-  min-height: 2em;
-  position: relative;
-}
-
-.fc .fc-daygrid-body-natural .fc-daygrid-day-events {
-  margin-bottom: 1em;
 }
 
 .fc .fc-daygrid-event-harness {
@@ -886,17 +900,6 @@ a.fc-event:hover {
 
 .fc .fc-daygrid-event.fc-event-mirror {
   z-index: 7;
-}
-
-.fc .fc-daygrid-day-bottom {
-  font-size: 0.85em;
-  padding: 2px 3px 0;
-}
-
-.fc .fc-daygrid-day-bottom::before {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 .fc .fc-daygrid-more-link {
