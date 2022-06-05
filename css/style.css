@@ -836,7 +836,7 @@ seasonalprodindex
 .title__heading--one {
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  animation-name: titlefade;
+  animation-name: title-fade;
   color: #fff;
   font-size: 3.5rem;
   font-weight: 400;
@@ -844,7 +844,7 @@ seasonalprodindex
   white-space: nowrap;
 }
 
-@keyframes titlefade {
+@keyframes title-fade {
   0% {
     opacity: 0;
   }
@@ -908,6 +908,7 @@ seasonalproduct
 
 @media screen and (min-width: 768px) {
   .seasonalprod {
+    margin-bottom: 5vw;
     margin-left: 30vw;
     padding-left: 0;
     padding-right: 0;
@@ -1049,4 +1050,153 @@ seasonalproduct
 .slidernavi > li > button[aria-disabled="true"] {
   opacity: 0.4;
   pointer-events: none;
+}
+
+/* 生菓子 */
+
+.japanesesweets {
+  margin-bottom: 100px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+@media screen and (min-width: 768px) {
+  .japanesesweets {
+    margin-left: 30vw;
+    margin-right: 0;
+    width: 70vw;
+  }
+}
+
+.titleimage {
+  height: 40vh;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.lineanime {
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-name: line-anime;
+}
+
+@keyframes line-anime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.titleimage__eyecatching {
+  background: url("../img/IMG-japanesesweetstitle-min.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.menucontent {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px;
+  width: 100%;
+  writing-mode: vertical-rl;
+}
+
+.menucontent h2 {
+  color: #333;
+  font-family: "Noto Serif JP", serif;
+  font-size: 3rem;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
+  margin: 0 0 0 1em;
+  text-size-adjust: 100%;
+  word-wrap: break-word;
+}
+
+.menucontent p {
+  color: #333;
+  font-family: "Noto Serif JP", serif;
+  font-size: 2rem;
+  height: 13em;
+  letter-spacing: 0.1em;
+  line-height: 1.8;
+  word-wrap: break-word;
+}
+
+/* card */
+
+/* ここからカードレイアウトのスタイリング */
+.japanesesweets__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.japanesesweets__item {
+  display: flex;
+  flex-direction: column;
+
+  /*  outline: 1px solid #000; */
+  font-size: 1.5vw;
+  margin: calc(30px / 2);
+  width: calc(100% / 2 - 30px);
+}
+
+@media screen and (min-width: 992px) {
+  .japanesesweets__item {
+    width: calc(100% / 3 - 30px);
+  }
+}
+
+.japanesesweetsthumbnail__img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.japanesesweets__title {
+  font-size: 2.3rem;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.japanesesweets__price {
+  font-size: 1.9rem;
+  margin-top: 0.2em;
+  text-align: center;
+}
+
+.japanesesweets__comment {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  text-align: justify;
+}
+
+.japanesesweets__btn {
+  align-items: center;
+  border: 1px solid #212121;
+  display: flex;
+  font-size: 1.7rem;
+  height: 60px;
+  justify-content: center;
+  margin-top: auto;
+  position: relative;
+}
+
+.japanesesweets__btn::after {
+  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 10px;
 }
