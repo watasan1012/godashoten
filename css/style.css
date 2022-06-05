@@ -1205,6 +1205,7 @@ seasonalproduct
   border: 1px solid #212121;
   display: flex;
   font-size: 1.7rem;
+  letter-spacing: 0.2em;
   height: 60px;
   justify-content: center;
   margin-top: auto;
