@@ -1005,30 +1005,6 @@ seasonalproduct
   text-align: center;
 }
 
-/*
-.scrollingcarousel__btn {
-  align-items: center;
-  border: 1px solid #212121;
-  display: flex;
-  font-size: 1.7rem;
-  height: 60px;
-  justify-content: center;
-  margin-top: auto;
-  position: relative;
-}
-
-.scrollingcarousel__btn::after {
-  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 10px;
-  position: absolute;
-  right: 0;
-  width: 10px;
-}
-*/
-
 .slidernavi {
   display: flex;
   list-style-type: none;
@@ -1203,7 +1179,7 @@ seasonalproduct
 }
 
 .productbtn {
-  height: 80px;
+  height: 70px;
   outline: solid 1px #000;
   margin-top: auto;
   position: relative;
@@ -1211,7 +1187,8 @@ seasonalproduct
 
 .productbtn__link {
   color: #333;
-  font-size: 20px;
+  font-size: 1.8rem;
+  letter-spacing: 0.07em;
   align-items: center;
   display: flex;
   height: 100%;
