@@ -1005,6 +1005,7 @@ seasonalproduct
   text-align: center;
 }
 
+/*
 .scrollingcarousel__btn {
   align-items: center;
   border: 1px solid #212121;
@@ -1026,6 +1027,7 @@ seasonalproduct
   right: 0;
   width: 10px;
 }
+*/
 
 .slidernavi {
   display: flex;
@@ -1200,19 +1202,24 @@ seasonalproduct
   }
 }
 
-.japanesesweets__btn {
-  align-items: center;
-  border: 1px solid #212121;
-  display: flex;
-  font-size: 1.7rem;
-  letter-spacing: 0.2em;
-  height: 60px;
-  justify-content: center;
+.productbtn {
+  height: 80px;
+  outline: solid 1px #000;
   margin-top: auto;
   position: relative;
 }
 
-.japanesesweets__btn::after {
+.productbtn__link {
+  color: #333;
+  font-size: 20px;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.productbtn::after{
   background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
   bottom: 0;
   content: "";
@@ -1222,3 +1229,4 @@ seasonalproduct
   right: 0;
   width: 10px;
 }
+
