@@ -1168,7 +1168,7 @@ seasonalproduct
   padding-left: 0.5em;
   padding-right: 0.5em;
   line-height: 1.7;
-/*  text-align: justify;*/
+  /*  text-align: justify;*/
   letter-spacing: 0.2em;
 }
 
@@ -1187,7 +1187,7 @@ seasonalproduct
 
 .productbtn__link {
   color: #333;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   letter-spacing: 0.07em;
   align-items: center;
   display: flex;
@@ -1196,7 +1196,13 @@ seasonalproduct
   width: 100%;
 }
 
-.productbtn::after{
+@media screen and (min-width: 768px) {
+  .productbtn__link {
+    font-size: 1.8rem;
+  }
+}
+
+.productbtn::after {
   background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
   bottom: 0;
   content: "";
@@ -1206,4 +1212,3 @@ seasonalproduct
   right: 0;
   width: 10px;
 }
-
