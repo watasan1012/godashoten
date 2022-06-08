@@ -439,13 +439,13 @@ product
   text-align: center;
 }
 
-.product__figre {
+.product__fig {
   display: block;
   margin-bottom: 30px;
   transition: 0.3s ease-in-out;
 }
 
-.product__figre img {
+.product__fig img {
   border-radius: 50%;
   display: block;
   height: 144px;
@@ -456,7 +456,7 @@ product
   width: 200px;
 }
 
-.product__figre:hover {
+.product__fig:hover {
   transform: scale(1.18);
 }
 
@@ -818,7 +818,7 @@ seasonalprodindex
 ---------------------------------------- */
 
 .title__wrap {
-  background: url("../img/img-header-1-min.jpg") no-repeat center center / cover;
+  background: url("../img/IMGtitleheadingone-min.jpg") no-repeat center center / cover;
   height: 250px;
   margin-top: 20vw;
   position: relative;
@@ -1069,7 +1069,7 @@ seasonalproduct
 }
 
 .titleeyecatching__japanesesweets {
-  background: url("../img/IMG-titlejapanesesweets-min.jpg") no-repeat center;
+  background: url("../img/IMGtitlejapanesesweets-min.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -1243,7 +1243,7 @@ seasonalproduct
 }
 
 .titleeyecatching__friedconfectionery {
-  background: url("../img/IMG-titlefriedconfectionery-min.jpg") no-repeat center;
+  background: url("../img/IMGtitlefriedconfectionery-min.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
