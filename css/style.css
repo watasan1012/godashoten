@@ -503,9 +503,9 @@ product
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 calendar
----------------------------------------- */
+-------------------- */
 
 .calendar {
   background-color: #e6e3c5;
@@ -529,9 +529,9 @@ calendar
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 introduction
----------------------------------------- */
+-------------------- */
 
 .introduction {
   display: block;
@@ -588,9 +588,9 @@ introduction
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 privacy
----------------------------------------- */
+-------------------- */
 
 .privacy {
   display: block;
@@ -658,9 +658,9 @@ privacy
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 footer
----------------------------------------- */
+-------------------- */
 
 .footer {
   padding: 0 6vw 8vw;
@@ -702,9 +702,9 @@ footer
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 backdecoration
----------------------------------------- */
+-------------------- */
 
 .backdecoration {
   bottom: 0;
@@ -813,9 +813,9 @@ backdecoration
   width: 200px;
 }
 
-/* ----------------------------------------
+/* --------------------
 seasonalprodindex
----------------------------------------- */
+-------------------- */
 
 .title__wrap {
   background: url("../img/IMGtitleheadingone-min.jpg") no-repeat center center / cover;
@@ -891,9 +891,9 @@ seasonalprodindex
   }
 }
 
-/* ----------------------------------------
+/* --------------------
 seasonalproduct
----------------------------------------- */
+-------------------- */
 
 .seasonalprod {
   align-items: center;
@@ -920,8 +920,6 @@ seasonalproduct
   height: 400px;
   width: 30%;
   writing-mode: vertical-lr;
-
-  /*  padding-left: 5%; */
 }
 
 .seasonalprod__title {
@@ -936,18 +934,12 @@ seasonalproduct
   font-size: 2rem;
   letter-spacing: 0.2em;
   line-height: 1.7;
-
-  /*  margin-left: 3%; */
-
-  /*  margin-right: 3%; */
 }
 
 /* scrollingcarousel */
 
 .scrollingcarousel {
   padding-right: 3vw;
-
-  /*  width: 65vw; */
   width: 70%;
 }
 
@@ -1106,7 +1098,6 @@ seasonalproduct
 
 /* card */
 
-/* ここからカードレイアウトのスタイリング */
 .menuproduct__list {
   display: flex;
   flex-wrap: wrap;
@@ -1115,8 +1106,6 @@ seasonalproduct
 .menuproduct__item {
   display: flex;
   flex-direction: column;
-
-  /*  outline: 1px solid #000; */
   font-size: 1.5vw;
   margin: calc(30px / 2);
   width: calc(100% / 2 - 30px);
@@ -1247,3 +1236,5 @@ seasonalproduct
   background-size: cover;
   height: 100%;
 }
+
+
