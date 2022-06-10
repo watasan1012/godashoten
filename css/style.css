@@ -813,9 +813,8 @@ backdecoration
   width: 200px;
 }
 
-
 /* --------------------
-menut
+menu
 -------------------- */
 
 .title__wrap {
@@ -970,8 +969,8 @@ menut
 .scrollingcarousel__txt {
   font-size: 2.2rem;
   letter-spacing: 0.1em;
-  margin-top: 0.1em;
   margin-bottom: 0.6em;
+  margin-top: 0.1em;
   text-align: center;
 }
 
@@ -1008,158 +1007,19 @@ menut
 
 .seasonalprod__title {
   color: #333;
-  font-size: 3rem;
+  font-size: 2em;
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 2;
 }
 
 .seasonalprod__text {
-  font-size: 2rem;
+  font-size: 1.8em;
   letter-spacing: 0.2em;
   line-height: 1.7;
 }
 
 /* japanesesweets */
-
-main #japanesesweets {}
-
-main #japanesesweetsmain #japanesesweets .titleimage {}
-
-main #japanesesweets .titleimagemain #japanesesweets .menucontent {}
-
-main #japanesesweets .menucontent div {}
-
-main #japanesesweets .menucontent p {}
-
-main #japanesesweets h2 {}
-
-main #japanesesweets .menuproduct__list {}
-
-main #japanesesweets .menuproduct__item {}
-
-main #japanesesweets .menuproduct__thumbnail {}
-
-main #japanesesweets .menuproduct__thumbnail a {}
-
-main #japanesesweets img {}
-
-main #japanesesweets .menuproduct__title {}
-
-main #japanesesweets .menuproduct__price {}
-
-main #japanesesweets .menuproduct__comment {}
-
-main #japanesesweets .menuproduct__btn {}
-
-main #japanesesweets .menuproduct__btn a {}
-
-.menuproduct__btn {
-  height: 70px;
-  margin-top: auto;
-  border: solid 1px #000;
-  position: relative;
-}
-
-.menuproduct__btn a {
-  align-items: center;
-  color: #333;
-  display: flex;
-  font-size: 1.4rem;
-  height: 100%;
-  justify-content: center;
-  letter-spacing: 0.07em;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .menuproduct__btn a {
-    font-size: 1.8rem;
-  }
-}
-
-.menuproduct__btn::after {
-  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 10px;
-  position: absolute;
-  right: 0;
-  width: 10px;
-}
-
-
-main .titleeyecatching__japanesesweets {}
-
-main #goodiebag {}
-
-main #goodiebagmain #goodiebag .titleimage {}
-
-main #goodiebag .titleimagemain #goodiebag .titleeyecatching__friedconfectionery {}
-
-main #goodiebag .menucontent {}
-
-main #goodiebag .menucontent div {}
-
-main #goodiebag .menucontent p {}
-
-main #goodiebag h2 {}
-
-main #goodiebag .menuproduct__list {}
-
-main #goodiebag .menuproduct__item {}
-
-main #goodiebag .menuproduct__thumbnail {}
-
-main #goodiebag .menuproduct__thumbnail a {}
-
-main #goodiebag img {}
-
-main #goodiebag .menuproduct__title {}
-
-main #goodiebag .menuproduct__price {}
-
-main #goodiebag .menuproduct__comment {}
-
-main #goodiebag .menuproduct__btn {}
-
-main #goodiebag .menuproduct__btn a {}
-
-main #friedconfectionery {}
-
-main #friedconfectionerymain #friedconfectionery .titleimage {}
-
-main #friedconfectionery .titleimagemain #friedconfectionery .titleeyecatching__friedconfectionery {}
-
-main #friedconfectionery .menucontent {}
-
-main #friedconfectionery .menucontent div {}
-
-main #friedconfectionery .menucontent p {}
-
-main #friedconfectionery h2 {}
-
-main #friedconfectionery .menuproduct__list {}
-
-main #friedconfectionery .menuproduct__item {}
-
-main #friedconfectionery .menuproduct__thumbnail {}
-
-main #friedconfectionery .menuproduct__thumbnail a {}
-
-main #friedconfectionery img {}
-
-main #friedconfectionery .menuproduct__title {}
-
-main #friedconfectionery .menuproduct__price {}
-
-main #friedconfectionery .menuproduct__comment {}
-
-main #friedconfectionery .menuproduct__btn {}
-
-main #friedconfectionery .menuproduct__btn a {}
-
 
 .japanesesweets {
   margin-bottom: 100px;
@@ -1195,12 +1055,6 @@ main #friedconfectionery .menuproduct__btn a {}
   100% {
     opacity: 1;
   }
-}
-
-.titleeyecatching__japanesesweets {
-  background: url("../img/IMGtitlejapanesesweets-min.jpg") no-repeat center;
-  background-size: cover;
-  height: 100%;
 }
 
 .menucontent {
@@ -1258,7 +1112,6 @@ main #friedconfectionery .menuproduct__btn a {}
   display: block;
   height: auto;
   max-width: 100%;
-  vertical-align: baseline;
   width: 100%;
 }
 
@@ -1301,6 +1154,46 @@ main #friedconfectionery .menuproduct__btn a {}
   }
 }
 
+.menuproduct__btn {
+  border: solid 1px #000;
+  height: 70px;
+  margin-top: auto;
+  position: relative;
+}
+
+.menuproduct__btn a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 1.4rem;
+  height: 100%;
+  justify-content: center;
+  letter-spacing: 0.07em;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .menuproduct__btn a {
+    font-size: 1.8rem;
+  }
+}
+
+.menuproduct__btn::after {
+  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 10px;
+}
+
+.titleeyecatching__japanesesweets {
+  background: url("../img/IMGtitlejapanesesweets-min.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
 
 /* goodiebag */
 
@@ -1339,3 +1232,7 @@ main #friedconfectionery .menuproduct__btn a {}
   background-size: cover;
   height: 100%;
 }
+
+/* --------------------
+product
+-------------------- */

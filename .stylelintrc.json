@@ -23,6 +23,6 @@
     "selector-class-pattern": null,
     "string-quotes": "double",
     "value-list-comma-space-after": "always",
-    "selector-list-comma-newline-after": "always-multi-line" 
+    "selector-list-comma-newline-after": "always-multi-line"
   }
 }
