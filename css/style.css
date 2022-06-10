@@ -897,7 +897,7 @@ menu
 .seasonalprod {
   align-items: center;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   padding-left: 3vw;
   padding-right: 3vw;
   width: 100vw;
@@ -917,7 +917,7 @@ menu
 
 .scrollingcarousel {
   padding-right: 4%;
-  width: 70%;
+  width: 66%;
 }
 
 .scrollingcarousel__wrapper {
@@ -1002,22 +1002,34 @@ menu
 
 .seasonalprod__sentence {
   height: 400px;
-  width: 26%;
+  width: 30%;
   writing-mode: vertical-lr;
 }
 
 .seasonalprod__title {
   color: #333;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 0.1em;
   line-height: 1.9;
+}
+
+@media screen and (min-width: 768px) {
+  .seasonalprod__title {
+    font-size: 2em;
+  }
 }
 
 .seasonalprod__text {
   font-size: 1.8em;
   letter-spacing: 0.2em;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 768px) {
+  .seasonalprod__text {
+    font-size: 1.8em;
+  }
 }
 
 /* japanesesweets */
