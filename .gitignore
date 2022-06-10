@@ -1,7 +1,7 @@
 # ファイルを指定する
 .DS_Store
-.stylelintrc.json
-package.json
+# .stylelintrc.json
+# package.json
 # package-lock.json
 
 # ディレクトリを指定する

@@ -114,10 +114,6 @@ header
     transform: perspective(500px) rotateY(90deg);
   }
 
-  50% {
-    transform: perspective(500px) rotateY(-90deg);
-  }
-
   to {
     transform: perspective(500px) rotateY(0deg);
   }
@@ -268,7 +264,7 @@ hero
   padding: 0 6vw;
 }
 
-.hero__image img {
+.hero__featured img {
   border: 0;
   border-radius: 20px;
   height: auto;
@@ -402,7 +398,7 @@ product
 
 .product {
   display: block;
-  padding: 8vw 3vw;
+  padding: 8vw 0;
   position: relative;
 }
 
@@ -412,16 +408,18 @@ product
   font-weight: 400;
   letter-spacing: 0.1em;
   margin-bottom: 16px;
+  padding-left: 6vw;
 }
 
 .product__list {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
-  width: 100%;
 }
 
 .product__item {
   background-color: #f2f2f2;
+  width: 50%;
 }
 
 .product__item:nth-child(odd) {
@@ -434,7 +432,9 @@ product
 }
 
 .product__title-third {
+  font-family: "Noto Serif JP", serif;
   font-size: 2.3rem;
+  font-weight: 300;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -446,18 +446,18 @@ product
 }
 
 .product__fig img {
-  border-radius: 50%;
   display: block;
-  height: 144px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100%;
   pointer-events: none;
-  width: 200px;
+  transition: 0.4s;
+  width: 100%;
 }
 
-.product__fig:hover {
-  transform: scale(1.18);
+/* ここに */
+.product__inner:hover .product__fig img {
+  transform: scale(1.1);
 }
 
 .product__details {
@@ -813,8 +813,9 @@ backdecoration
   width: 200px;
 }
 
+
 /* --------------------
-seasonalprodindex
+menut
 -------------------- */
 
 .title__wrap {
@@ -831,6 +832,16 @@ seasonalprodindex
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 768px) {
+  .title__wrap {
+    margin-top: 0;
+  }
+
+  .title__inner {
+    padding-left: 30vw;
+  }
 }
 
 .title__heading--one {
@@ -854,16 +865,6 @@ seasonalprodindex
   }
 }
 
-@media screen and (min-width: 768px) {
-  .title__wrap {
-    margin-top: 0;
-  }
-
-  .title__inner {
-    padding-left: 30vw;
-  }
-}
-
 /* breadcrumb */
 
 .breadcrumb__list {
@@ -873,11 +874,10 @@ seasonalprodindex
   list-style-type: none;
 }
 
-.breadcrumb__list a {
-  color: #333;
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-decoration: none;
+@media screen and (min-width: 768px) {
+  .breadcrumb__list {
+    padding-left: 30vw;
+  }
 }
 
 .breadcrumb__item + .breadcrumb__item::before {
@@ -885,21 +885,18 @@ seasonalprodindex
   margin-left: 0.3em;
 }
 
-@media screen and (min-width: 768px) {
-  .breadcrumb__list {
-    padding-left: 30vw;
-  }
+.breadcrumb__item a {
+  color: #333;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-decoration: none;
 }
 
-/* --------------------
-seasonalproduct
--------------------- */
+/* seasonalproduct */
 
 .seasonalprod {
   align-items: center;
   display: flex;
-
-  /*  flex-direction: row-reverse; */
   justify-content: flex-end;
   padding-left: 3vw;
   padding-right: 3vw;
@@ -916,36 +913,16 @@ seasonalproduct
   }
 }
 
-.seasonalprod__sentence {
-  height: 400px;
-  width: 30%;
-  writing-mode: vertical-lr;
-}
-
-.seasonalprod__title {
-  color: #333;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 1.2;
-}
-
-.seasonalprod__text {
-  font-size: 2rem;
-  letter-spacing: 0.2em;
-  line-height: 1.7;
-}
-
 /* scrollingcarousel */
 
 .scrollingcarousel {
-  padding-right: 3vw;
+  padding-right: 4%;
   width: 70%;
 }
 
 .scrollingcarousel__wrapper {
   overflow-x: scroll;
-  padding-bottom: 15px;
+  padding-bottom: 1em;
 }
 
 .scrollingcarousel__list {
@@ -965,7 +942,15 @@ seasonalproduct
   margin-right: 0;
 }
 
+.scrollingcarousel__photo {
+  border-radius: 20px;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
 .scrollingcarousel__photo img {
+  display: block;
   height: 256px;
   transition: 1s all;
   width: 256px;
@@ -975,25 +960,18 @@ seasonalproduct
   transform: scale(1.1);
 }
 
-.scrollingcarousel__photo {
-  border-radius: 20px;
-  line-height: 0;
-  overflow: hidden;
-  position: relative;
-}
-
 .scrollingcarousel__title {
   font-size: 2.4rem;
   letter-spacing: 0.1em;
-  margin-top: 0.7em;
+  margin-top: 0.8em;
   text-align: center;
 }
 
 .scrollingcarousel__txt {
   font-size: 2.2rem;
   letter-spacing: 0.1em;
-  margin-bottom: 1em;
   margin-top: 0.1em;
+  margin-bottom: 0.6em;
   text-align: center;
 }
 
@@ -1022,7 +1000,166 @@ seasonalproduct
   pointer-events: none;
 }
 
-/* 生菓子 */
+.seasonalprod__sentence {
+  height: 400px;
+  width: 26%;
+  writing-mode: vertical-lr;
+}
+
+.seasonalprod__title {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+
+.seasonalprod__text {
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  line-height: 1.7;
+}
+
+/* japanesesweets */
+
+main #japanesesweets {}
+
+main #japanesesweetsmain #japanesesweets .titleimage {}
+
+main #japanesesweets .titleimagemain #japanesesweets .menucontent {}
+
+main #japanesesweets .menucontent div {}
+
+main #japanesesweets .menucontent p {}
+
+main #japanesesweets h2 {}
+
+main #japanesesweets .menuproduct__list {}
+
+main #japanesesweets .menuproduct__item {}
+
+main #japanesesweets .menuproduct__thumbnail {}
+
+main #japanesesweets .menuproduct__thumbnail a {}
+
+main #japanesesweets img {}
+
+main #japanesesweets .menuproduct__title {}
+
+main #japanesesweets .menuproduct__price {}
+
+main #japanesesweets .menuproduct__comment {}
+
+main #japanesesweets .menuproduct__btn {}
+
+main #japanesesweets .menuproduct__btn a {}
+
+.menuproduct__btn {
+  height: 70px;
+  margin-top: auto;
+  border: solid 1px #000;
+  position: relative;
+}
+
+.menuproduct__btn a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  font-size: 1.4rem;
+  height: 100%;
+  justify-content: center;
+  letter-spacing: 0.07em;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .menuproduct__btn a {
+    font-size: 1.8rem;
+  }
+}
+
+.menuproduct__btn::after {
+  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 10px;
+}
+
+
+main .titleeyecatching__japanesesweets {}
+
+main #goodiebag {}
+
+main #goodiebagmain #goodiebag .titleimage {}
+
+main #goodiebag .titleimagemain #goodiebag .titleeyecatching__friedconfectionery {}
+
+main #goodiebag .menucontent {}
+
+main #goodiebag .menucontent div {}
+
+main #goodiebag .menucontent p {}
+
+main #goodiebag h2 {}
+
+main #goodiebag .menuproduct__list {}
+
+main #goodiebag .menuproduct__item {}
+
+main #goodiebag .menuproduct__thumbnail {}
+
+main #goodiebag .menuproduct__thumbnail a {}
+
+main #goodiebag img {}
+
+main #goodiebag .menuproduct__title {}
+
+main #goodiebag .menuproduct__price {}
+
+main #goodiebag .menuproduct__comment {}
+
+main #goodiebag .menuproduct__btn {}
+
+main #goodiebag .menuproduct__btn a {}
+
+main #friedconfectionery {}
+
+main #friedconfectionerymain #friedconfectionery .titleimage {}
+
+main #friedconfectionery .titleimagemain #friedconfectionery .titleeyecatching__friedconfectionery {}
+
+main #friedconfectionery .menucontent {}
+
+main #friedconfectionery .menucontent div {}
+
+main #friedconfectionery .menucontent p {}
+
+main #friedconfectionery h2 {}
+
+main #friedconfectionery .menuproduct__list {}
+
+main #friedconfectionery .menuproduct__item {}
+
+main #friedconfectionery .menuproduct__thumbnail {}
+
+main #friedconfectionery .menuproduct__thumbnail a {}
+
+main #friedconfectionery img {}
+
+main #friedconfectionery .menuproduct__title {}
+
+main #friedconfectionery .menuproduct__price {}
+
+main #friedconfectionery .menuproduct__comment {}
+
+main #friedconfectionery .menuproduct__btn {}
+
+main #friedconfectionery .menuproduct__btn a {}
+
 
 .japanesesweets {
   margin-bottom: 100px;
@@ -1127,8 +1264,8 @@ seasonalproduct
 
 .menuproduct__title {
   font-size: 1.6rem;
-  margin-top: 0.5em;
   letter-spacing: 0.05em;
+  margin-top: 0.5em;
   text-align: center;
 }
 
@@ -1152,10 +1289,10 @@ seasonalproduct
 
 .menuproduct__comment {
   font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  line-height: 1.7;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
-  line-height: 1.7;
-   letter-spacing: 0.2em;
 }
 
 @media screen and (min-width: 768px) {
@@ -1164,40 +1301,6 @@ seasonalproduct
   }
 }
 
-.menuproduct__btn {
-  height: 70px;
-  outline: solid 1px #000;
-  margin-top: auto;
-  position: relative;
-}
-
-.menuproduct__btn a {
-  color: #333;
-  font-size: 1.4rem;
-  letter-spacing: 0.07em;
-  align-items: center;
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .menuproduct__btn a {
-    font-size: 1.8rem;
-  }
-}
-
-.menuproduct__btn::after {
-  background: linear-gradient(to bottom right, rgb(255 255 255 / 0%) 50%, #212121 50.5%) no-repeat top left/100% 100%;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 10px;
-  position: absolute;
-  right: 0;
-  width: 10px;
-}
 
 /* goodiebag */
 
@@ -1236,5 +1339,3 @@ seasonalproduct
   background-size: cover;
   height: 100%;
 }
-
-

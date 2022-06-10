@@ -583,3 +583,11 @@ stylelint公式ドキュメント
 [https://stylelint.io/user-guide/get-started](https://stylelint.io/user-guide/get-started)
 
 stylelint でcssのプロパティを自動で統一させる方法
+
+## node_modulesの復元
+
+package.jsonがあることを確認する
+
+```shell
+% npm install
+```

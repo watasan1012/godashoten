@@ -1,0 +1,30 @@
+{
+  "name": "godashoten",
+  "version": "1.0.0",
+  "description": "htmlや、Cascading Style Sheets(以降css)にはルールがあります。ルールに沿ったコーディングを心がける必要があります。Web標準化のルールを作っているグループが存在します。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watasan1012/godashoten.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watasan1012/godashoten/issues"
+  },
+  "homepage": "https://github.com/watasan1012/godashoten#readme",
+  "devDependencies": {
+    "stylelint": "^14.9.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^26.0.0",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "dependencies": {
+    "prettier": "^2.6.2"
+  }
+}
