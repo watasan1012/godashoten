@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../product/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="shortcut icon" href="../img/favicon.ico" />
 
   <meta property="og:title" content="ページのタイトル">
@@ -25,27 +25,18 @@
 
 </head>
 
-<body id="home">
-
-  <!-- loadingUnnecessary -->
-  <!--
-<div id="loading">
-<div id="loader"></div>
-</div>
--->
-  <!-- header -->
-  <header class="header-wrapper">
+<body>
+  <header class="header__wrapper">
     <div class="header__inner">
-      <a href="#" class="header__logo"><img src="../img/common_logo.svg" alt="江田商店"></a>
-      <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false"
-        tabindex="1" accesskey="m">
+      <a href="../index.html#hero" class="header__logo"><img src="../img/common_logo.svg" alt="江田商店"></a>
+      <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false" tabindex="1" accesskey="m">
         <span class="hamburger__line" aria-hidden="true"></span>
       </button>
       <nav id="gnav" class="gnav" aria-label="メインメニュー" aria-hidden="true">
         <ul id="gnav__list" class="gnav__list">
-          <li class="gnav__item"><a href="../index.html" class="gnav__link">Home</a></li>
+          <li class="gnav__item"><a href="../index.html#hero" class="gnav__link">Home</a></li>
           <li class="gnav__item"><a href="../index.html#notice" class="gnav__link">お知らせ</a></li>
-          <li class="gnav__item"><a href="../index.html#product" class="gnav__link">商品のご案内 お品書き</a></li>
+          <li class="gnav__item"><a href="../index.html#product" class="gnav__link">お品書き</a></li>
           <li class="gnav__item"><a href="../index.html#calendar__wrap" class="gnav__link">催事カレンダー</a></li>
           <li class="gnav__item"><a href="../index.html#introduction" class="gnav__link">会社紹介</a></li>
           <li class="gnav__item"><a href="../index.html#privacy" class="gnav__link">プライバシー</a></li>
@@ -53,26 +44,19 @@
       </nav>
     </div>
   </header>
-
   <main>
-
-    <section class="oneproduct">
-      <h1 class="oneproduct__title">
+    <section class="goods">
+      <h1 class="goods__title">
         いそべもち
       </h1>
-
-      <div class="oneproduct__inner">
-        <img src="../img/IMG_isobemoti.jpg" alt="">
-      </div>
-
-      <div class="oneproduct__detail">
-        もちもちとした餅に海苔を巻き、あまからい醤油をかけています。
-        1日の自分のご褒美に。ご家族に、大切な方への贈り物、来客へのおもてなしに最適です。
-      </div>
-
-      <ul class="oneproduct__list">
-        <li class="oneproduct__item"><span>価格</span><span>1個入216円(税込)</span></li>
-        <li class="oneproduct__item">材料の一部に、小麦を含む。</li>
+      <p class="goods__eyecatch">
+        <img src="../img/IMGgoods-14-min.jpg" alt="いそべもち">
+      </p>
+      <p class="goods__detail">
+        もちもちとした餅に海苔を巻き、あまからい醤油タレをかけています。 1日の自分のご褒美に。ご家族に、大切な方への贈り物、来客へのおもてなしに最適です。
+      </p>
+      <ul class="goods__list">
+        <li class="goods__item"><span>価格</span><span>1個入216円(税込)</span></li>
       </ul>
     </section>
   </main>
@@ -80,7 +64,7 @@
     <a href="#hero" class="footer__link">
       <img src="../img/common_logo.svg" alt="footerlogo" class="footer__logo">
     </a>
-    <p><small>&copy;2023ピーエムネッツ株式会社</small></p>
+    <p><small>&copy;2014ピーエムネッツ株式会社</small></p>
   </footer>
   <div class="backdecoration">
     <div id="backdecoration__layer--first" class="backdecoration__layer--first">
@@ -100,9 +84,10 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="../js/hamburger.js"></script>
   <script src="../js/scroll.js"></script>
+  <script src="../js/hamburger.js"></script>
   <script src="../js/background.js"></script>
+  <script src="../js/scrollingcarousel.js"></script>
 
 </body>
 
