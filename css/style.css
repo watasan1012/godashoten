@@ -1282,13 +1282,14 @@ goods
   border-radius: 20px;
 }
 
-main .goods__detail {
+.goods__detail {
   margin: 1vw 0 25px;
   padding: 1vw;
   font-size: 2rem;
   line-height: 1.7em;
   color: #333;
   text-align: left;
+  letter-spacing: 0.2em;
 }
 
 .goods__item {
