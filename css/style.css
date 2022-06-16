@@ -496,13 +496,7 @@ product
 }
 
 .product__item {
-  /*  background-color: #f2f2f2; */
-  background-color: #e6e3c5;
   width: 50%;
-}
-
-.product__item:nth-child(odd) {
-  background-color: #e6e3c5;
 }
 
 .product__inner {
@@ -1472,6 +1466,12 @@ goods
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   writing-mode: vertical-rl;
+}
+
+@media screen and (min-width: 768px) {
+  .onecase__content {
+    width: 50%;
+  }
 }
