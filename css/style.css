@@ -1445,7 +1445,7 @@ goods
 }
 
 .onecase__img {
-  border: solid 1px #333;
+/*  border: solid 1px #333;*/
   border-radius: 20px;
   height: 45vw;
 }
