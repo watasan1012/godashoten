@@ -340,8 +340,7 @@ notice
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
-  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 .notice__card {
@@ -415,10 +414,7 @@ greeting
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 6vw;
+  margin-bottom: 1rem;
 }
 
 .greeting__body {
@@ -430,10 +426,6 @@ greeting
 }
 
 @media screen and (min-width: 768px) {
-  .greeting__title {
-    padding-right: 0;
-  }
-
   .greeting__body {
     padding-right: 0;
   }
@@ -486,7 +478,7 @@ product
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .product__list {
@@ -501,7 +493,6 @@ product
 
 .product__inner {
   height: 100%;
-  /*  padding: 40px 20px;*/
   padding: 30px 10px;
 }
 
@@ -593,7 +584,7 @@ calendar
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -618,7 +609,7 @@ introduction
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 .introduction__block {
@@ -677,7 +668,7 @@ privacy
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 0.1em;
-  padding-left: 0;
+  margin-bottom: 1rem;
 }
 
 .privacy__body {
