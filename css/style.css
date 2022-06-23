@@ -296,6 +296,7 @@ hero
   padding-bottom: 0;
   padding-left: 0;
   padding-top: 0;
+  text-align: justify;
   word-wrap: break-word;
 }
 
@@ -425,7 +426,7 @@ greeting
 }
 
 .greeting__body {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   line-height: 1.6;
@@ -501,9 +502,14 @@ product
   width: 50%;
 }
 
+.product__item:nth-child(2n + 1) {
+  backdrop-filter: blur(10px);
+  background-color: rgb(255 255 255 / 50%);
+}
+
 .product__inner {
   height: 100%;
-  padding: 30px 10px;
+  padding: 40px 20px;
 }
 
 .product__title-third {
@@ -587,7 +593,7 @@ calendar
 
 .calendar {
   display: block;
-  padding: 8vw 6vw;
+  padding: 50px 6vw 80px;
   position: relative;
 }
 
@@ -612,7 +618,7 @@ introduction
 
 .introduction {
   display: block;
-  padding: 8vw 6vw;
+  padding: 50px 6vw 80px;
   position: relative;
 }
 
@@ -653,7 +659,7 @@ introduction
 
 .introduction__tabledata {
   color: #333;
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
   width: 100%;
 }
@@ -671,7 +677,7 @@ privacy
 
 .privacy {
   display: block;
-  padding: 8vw 6vw;
+  padding: 50px 6vw 80px;
   position: relative;
 }
 
@@ -719,7 +725,7 @@ privacy
 
 .privacy__tabledata {
   color: #333;
-  font-size: 1.9rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
   margin-bottom: 0.5em;
   width: 100%;
@@ -731,7 +737,8 @@ privacy
 
 @media screen and (min-width: 768px) {
   .privacy {
-    padding: 0 3vw 0 30vw;
+    padding-left: 30vw;
+    padding-right: 3vw;
   }
 }
 
