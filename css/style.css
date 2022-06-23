@@ -331,7 +331,8 @@ notice
 .notice {
   background-color: #e6e3c5;
   display: block;
-  padding: 8vw 6vw;
+  /*  padding: 8vw 6vw;*/
+  padding: 50px 6vw 80px;
   position: relative;
 }
 
@@ -387,7 +388,7 @@ notice
 
 @media screen and (min-width: 768px) {
   .notice {
-    padding: 21px 5vw 72px 30vw;
+    padding: 50px 3vw 80px 30vw;
   }
 }
 
@@ -397,15 +398,14 @@ greeting
 
 .greeting {
   display: block;
-  padding-bottom: 8vw;
-  padding-left: 6vw;
-  padding-top: 8vw;
+  padding-bottom: 80px;
+  padding-top: 50px;
   position: relative;
 }
 
 @media screen and (min-width: 768px) {
   .greeting {
-    padding: 21px 10px 10px 30vw;
+    padding: 50px 0 10px 30vw;
   }
 }
 
@@ -413,8 +413,17 @@ greeting
   color: #333;
   font-size: 3rem;
   font-weight: 400;
+  padding-right: 6vw;
+  padding-left: 6vw;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .greeting__title {
+    padding-left: 0;
+    padding-right: 3vw;
+  }
 }
 
 .greeting__body {
@@ -423,11 +432,14 @@ greeting
   letter-spacing: 0.05em;
   line-height: 1.6;
   padding-right: 6vw;
+  padding-left: 6vw;
+  text-align: justify;
 }
 
 @media screen and (min-width: 768px) {
   .greeting__body {
-    padding-right: 0;
+    padding-left: 0;
+    padding-right: 3vw;
   }
 }
 
@@ -550,7 +562,8 @@ product
 
 @media screen and (min-width: 768px) {
   .product {
-    padding: 21px 10px 72px 30vw;
+    /*    padding: 21px 10px 72px 30vw;*/
+    padding: 21px 0 72px 30vw;
   }
 
   .product__list {
