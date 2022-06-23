@@ -470,7 +470,8 @@ product
 .product {
   background-color: #e6e3c5;
   display: block;
-  padding: 8vw 0;
+  padding-bottom: 80px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -480,6 +481,14 @@ product
   font-weight: 400;
   letter-spacing: 0.1em;
   margin-bottom: 1rem;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+@media screen and (min-width: 768px) {
+  .product__title {
+    padding-left: 0;
+  }
 }
 
 .product__list {
@@ -551,7 +560,9 @@ product
 
 @media screen and (min-width: 768px) {
   .product {
-    padding: 21px 0 72px 30vw;
+    padding-bottom: 80px;
+    padding-left: 30vw;
+    padding-top: 50px;
   }
 
   .product__list {
