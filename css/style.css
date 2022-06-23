@@ -18,7 +18,7 @@ body {
   font-family: system-ui, "Noto Sans JP", sans-serif;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.7em;
+  letter-spacing: 0.1em;
   line-height: 1.7;
   position: relative;
 }
@@ -100,7 +100,7 @@ header
   margin: 0 auto;
   position: relative;
   top: 6vw;
-  transition: all 1.8s ease;
+  transition: 1.5s ease;
   width: 35vw;
   z-index: 1;
 }
@@ -239,7 +239,7 @@ gnav
 .gnav__link {
   display: block;
   font-size: 1.9rem;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.1em;
   text-align: center;
 }
 
@@ -291,7 +291,7 @@ hero
   background-color: rgb(255 255 255 / 60%);
   font-size: 2rem;
   font-weight: inherit;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   margin-top: 20px;
   padding-bottom: 0;
   padding-left: 0;
@@ -365,11 +365,12 @@ notice
   font-weight: 500;
   height: 1.9rem;
   padding: 0 0.9rem;
+  letter-spacing: 0.1em;
 }
 
 .notice__date {
   font-size: 1.9rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin: 0 0 0 1.15rem;
 }
 
@@ -380,7 +381,7 @@ notice
 .notice__text {
   font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin: 0.76rem 0 0;
   width: 100%;
 }
@@ -428,8 +429,8 @@ greeting
 .greeting__body {
   font-size: 2rem;
   font-weight: 500;
-  letter-spacing: 0.05em;
-  line-height: 1.6;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
   padding-left: 6vw;
   padding-right: 6vw;
   text-align: justify;
@@ -524,7 +525,7 @@ product
 .product__fig {
   display: block;
   margin-bottom: 30px;
-  transition: 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 .product__fig img {
@@ -533,7 +534,7 @@ product
   margin-left: auto;
   margin-right: auto;
   pointer-events: none;
-  transition: 0.4s;
+  transition: 1.5s;
   width: 100%;
 }
 
@@ -548,7 +549,7 @@ product
   font-size: 1.7rem;
   height: 60px;
   justify-content: center;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   overflow: hidden;
   position: relative;
 }
@@ -773,7 +774,7 @@ footer
 }
 
 .footer small {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -961,16 +962,17 @@ menu
   display: flex;
   height: 45px;
   list-style-type: none;
+  font-size: 1.6rem;
 }
 
 .breadcrumb__item + .breadcrumb__item::before {
   content: ">";
   margin-left: 0.3em;
+  margin-right: 0.3em;
 }
 
 .breadcrumb__item a {
   color: #333;
-  font-size: 1rem;
   letter-spacing: 0.1em;
   text-decoration: none;
 }
@@ -1027,7 +1029,6 @@ menu
 
 .scrollingcarousel__photo {
   border-radius: 20px;
-  line-height: 0;
   overflow: hidden;
   position: relative;
 }
@@ -1035,7 +1036,7 @@ menu
 .scrollingcarousel__photo img {
   display: block;
   height: 256px;
-  transition: 1s all;
+  transition: 1.5s all;
   width: 256px;
 }
 
@@ -1094,7 +1095,7 @@ menu
   font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 0.1em;
-  line-height: 1.9;
+  line-height: 1.7;
 }
 
 @media screen and (min-width: 768px) {
@@ -1105,7 +1106,7 @@ menu
 
 .seasonalprod__text {
   font-size: 1.8em;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   line-height: 1.7;
 }
 
@@ -1179,7 +1180,7 @@ menu
   font-size: 2rem;
   height: 13em;
   letter-spacing: 0.1em;
-  line-height: 1.8;
+  line-height: 1.7;
   word-wrap: break-word;
 }
 
@@ -1213,7 +1214,7 @@ menu
 
 .menuproduct__title {
   font-size: 1.6rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin-top: 0.5em;
   text-align: center;
 }
@@ -1238,7 +1239,7 @@ menu
 
 .menuproduct__comment {
   font-size: 1.4rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
   line-height: 1.7;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -1264,7 +1265,7 @@ menu
   font-size: 1.4rem;
   height: 100%;
   justify-content: center;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.1em;
   width: 100%;
 }
 
@@ -1368,8 +1369,8 @@ goods
 .goods__detail {
   color: #333;
   font-size: 2rem;
-  letter-spacing: 0.2em;
-  line-height: 1.7em;
+  letter-spacing: 0.1em;
+  line-height: 1.7;
   margin: 1vw 0 25px;
   text-align: left;
 }
@@ -1434,7 +1435,7 @@ goods
   font-size: 2.2rem;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 0.1em;
-  line-height: 1.85;
+  line-height: 1.7;
   margin: 0 0 0 1em;
   text-size-adjust: 100%;
   word-wrap: break-word;
@@ -1474,7 +1475,7 @@ goods
   -webkit-font-smoothing: antialiased;
   height: 13em;
   letter-spacing: 0.1em;
-  line-height: 2.2;
+  line-height: 1.7;
   padding-bottom: 2em;
   padding-top: 2em;
   text-size-adjust: 100%;
