@@ -124,13 +124,12 @@ header
 }
 
 .scroll .header__logo {
-  opacity: 0;
   transition: 1s;
   transform: rotateY(0deg);
 }
 
 .header__logo:hover {
-  transform: rotateY(360deg);
+  transform: rotateY(180deg);
 }
 
 /* Medium devices (tablets, 768px and up) */
