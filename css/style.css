@@ -378,16 +378,13 @@ notice
   font-size: 1.6rem;
   letter-spacing: 0.1em;
   margin: 0 0 0 1.15rem;
+  white-space:nowrap;
 }
 
 @media screen and (min-width: 768px) {
   .notice__date {
     font-size: 1.9rem;
   }
-}
-
-.notice__date span {
-  font-size: 1.6rem;
 }
 
 .notice__text {
