@@ -114,6 +114,10 @@ header
     transform: perspective(500px) rotateY(90deg);
   }
 
+  50% {
+    transform: perspective(500px) rotateY(-90deg);
+  }
+
   to {
     transform: perspective(500px) rotateY(0deg);
   }
