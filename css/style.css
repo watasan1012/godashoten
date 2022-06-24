@@ -125,10 +125,12 @@ header
 
 .scroll .header__logo {
   opacity: 0;
+  transition: 1s;
+  transform: rotateY(0deg);
 }
 
 .header__logo:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -373,7 +375,7 @@ notice
 }
 
 .notice__date {
-  font-size: 1.7rem;
+  font-size: 1.rem;
   letter-spacing: 0.1em;
   margin: 0 0 0 1.15rem;
 }
