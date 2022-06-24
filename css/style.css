@@ -509,12 +509,12 @@ product
 
 .product__item {
   width: 50%;
-  border: solid 1px #333;
 }
 
-.product__item:nth-child(2n + 1) {
+.product__item:nth-child(2),
+.product__item:nth-child(3) {
   backdrop-filter: blur(10px);
-  background-color: rgb(255 255 255 / 50%);
+  background-color: rgb(255 255 255 / 30%);
 }
 
 .product__inner {
@@ -524,7 +524,7 @@ product
 
 .product__title-third {
   font-family: "Noto Serif JP", serif;
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 300;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
@@ -555,7 +555,7 @@ product
   align-items: center;
   border: 1px solid #212121;
   display: flex;
-  font-size: 1.8rem;
+  font-size: 2rem;
   height: 60px;
   justify-content: center;
   letter-spacing: 0.1em;
@@ -585,15 +585,16 @@ product
     display: flex;
     flex-wrap: wrap;
   }
-
-  .product__item {
-    width: 50%;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .product__item {
     width: calc(50% / 2);
+  }
+
+  .product__item:nth-child(odd) {
+    backdrop-filter: blur(10px);
+    background-color: rgb(255 255 255 / 30%);
   }
 }
 
