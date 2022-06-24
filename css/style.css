@@ -369,9 +369,15 @@ notice
 }
 
 .notice__date {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   letter-spacing: 0.1em;
   margin: 0 0 0 1.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .notice__date {
+    font-size: 1.9rem;
+  }
 }
 
 .notice__date span {
