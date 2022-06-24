@@ -124,6 +124,7 @@ header
 }
 
 .scroll .header__logo {
+  opacity: 0;
   transition: 1s;
   transform: rotateY(0deg);
 }
