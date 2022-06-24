@@ -509,6 +509,7 @@ product
 
 .product__item {
   width: 50%;
+  border: solid 1px #333;
 }
 
 .product__item:nth-child(2n + 1) {
