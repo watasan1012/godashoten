@@ -591,6 +591,11 @@ product
   .product__item {
     width: calc(50% / 2);
   }
+  
+  .product__item:nth-child(2) {
+    backdrop-filter: blur(0);
+    background-color:transparent;
+  }
 
   .product__item:nth-child(odd) {
     backdrop-filter: blur(10px);
