@@ -591,10 +591,10 @@ product
   .product__item {
     width: calc(50% / 2);
   }
-  
+
   .product__item:nth-child(2) {
     backdrop-filter: blur(0);
-    background-color:transparent;
+    background-color: transparent;
   }
 
   .product__item:nth-child(odd) {
@@ -1495,4 +1495,45 @@ goods
   padding-top: 2em;
   text-size-adjust: 100%;
   word-wrap: break-word;
+}
+
+.recommend {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+@media screen and (min-width: 768px) {
+  .recommend {
+    padding-left: 30vw;
+    padding-right: 0;
+  }
+}
+
+
+.recommend__wrapper {
+  display: flex;
+}
+
+.recommend .recommend__left {
+  flex: 7;
+  background-color: lawngreen;
+}
+
+.recommend .recommend__right {
+  flex: 3;
+  display: flex;
+  writing-mode: vertical-rl;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.recommend__title {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Noto Serif JP", serif;
+}
+
+.recommend__text {
+  font-size: 2rem;
 }
