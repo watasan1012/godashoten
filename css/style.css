@@ -1117,12 +1117,10 @@ menu
   pointer-events: none;
 }
 
-
-
 /* japanesesweets */
 
 .japanesesweets {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -1229,19 +1227,19 @@ menu
 }
 
 .menuproduct__price {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-top: 0.2em;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .menuproduct__price {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
 .menuproduct__comment {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1em;
   line-height: 1.7;
   margin-bottom: 0.5em;
@@ -1250,7 +1248,7 @@ menu
 
 @media screen and (min-width: 768px) {
   .menuproduct__comment {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1265,7 +1263,8 @@ menu
   align-items: center;
   color: #333;
   display: flex;
-  font-size: 1.4rem;
+/*  font-size: 1.4rem;*/
+  font-size: 1.6rem;
   height: 100%;
   justify-content: center;
   letter-spacing: 0.1em;
@@ -1298,7 +1297,7 @@ menu
 /* goodiebag */
 
 .goodiebag {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 3%;
   margin-right: 3%;
 }
@@ -1314,7 +1313,7 @@ menu
 /* friedconfectionery */
 
 .friedconfectionery {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   margin-left: 3%;
   margin-right: 3%;
 }
