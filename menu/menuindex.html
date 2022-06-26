@@ -60,7 +60,43 @@
     <div class="recommend">
       <div class="recommend__wrapper">
         <div class="recommend__left">
-        left
+          <div class="scrollingcarousel" id="scrollingcarousel">
+              <ul class="scrollingcarousel__list" style="transform: translateX(0px); transition-duration: 600ms;">
+                <li class="scrollingcarousel__item">
+                  <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-25-min.jpg" alt="ゆずおはぎ"></p>
+                  <h3 class="scrollingcarousel__title">十勝おはぎ</h3>
+                  <p class="scrollingcarousel__txt">(ゆずおはぎ)</p>
+                  <p class="menuproduct__btn">
+                    <a href="../goods/index-25.html">詳細はこちら</a>
+                  </p>
+                </li>
+                <li class="scrollingcarousel__item">
+                  <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-20-min.jpg" alt="とろけるみずようかん"></p>
+                  <h3 class="scrollingcarousel__title">とろける水ようかん</h3>
+                  <p class="scrollingcarousel__txt"></p>
+                  <p class="menuproduct__btn">
+                    <a href="../goods/index-20.html">詳細はこちら</a>
+                  </p>
+                </li>
+                <li class="scrollingcarousel__item">
+                  <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-24-min.png" alt="わらびもち"></p>
+                  <h3 class="scrollingcarousel__title">わらび餅</h3>
+                  <p class="scrollingcarousel__txt"></p>
+                  <p class="menuproduct__btn">
+                    <a href="../goods/index-24.html">詳細はこちら</a>
+                  </p>
+                </li>
+              </ul> 
+          </div>
+          <ul class="slidernavi">
+            <li>
+              <button type="button" aria-disabled="true" id="scrollingcarouselprev">&lt;</button>
+              <!-- aria-disabled=true ボタン非活性 -->
+            </li>
+            <li>
+              <button type="button" aria-disabled="false" id="scrollingcarouselnext">&gt;</button>
+            </li>
+          </ul>
         </div>
         <div class="recommend__right">
           <h2 class="recommend__title">おすすめの商品</h2>
@@ -69,62 +105,6 @@
             和菓子の商品を集めました。
           </p>
         </div>
-        
-      </div>
-      
-    </div>
-    
-    
-    <div class="seasonalprod">
-      <!-- ./seasonalslider -->
-      <div class="scrollingcarousel" id="scrollingcarousel">
-        <div class="scrollingcarousel__wrapper">
-          <ul class="scrollingcarousel__list">
-            <li class="scrollingcarousel__item">
-              <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-25-min.jpg" alt="ゆずおはぎ"></p>
-              <h3 class="scrollingcarousel__title">十勝おはぎ</h3>
-              <p class="scrollingcarousel__txt">(ゆずおはぎ)</p>
-              <p class="menuproduct__btn">
-                <a href="../goods/index-25.html">詳細はこちら</a>
-              </p>
-            </li>
-
-            <li class="scrollingcarousel__item">
-              <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-20-min.jpg" alt="とろけるみずようかん"></p>
-              <h3 class="scrollingcarousel__title">とろける水ようかん</h3>
-              <p class="scrollingcarousel__txt"></p>
-              <p class="menuproduct__btn">
-                <a href="../goods/index-20.html">詳細はこちら</a>
-              </p>
-            </li>
-
-            <li class="scrollingcarousel__item">
-              <p class="scrollingcarousel__photo"><img src="../img/IMGcarousel-24-min.png" alt="わらびもち"></p>
-              <h3 class="scrollingcarousel__title">わらび餅</h3>
-              <p class="scrollingcarousel__txt"></p>
-              <p class="menuproduct__btn">
-                <a href="../goods/index-24.html">詳細はこちら</a>
-              </p>
-            </li>
-          </ul>
-        </div>
-        <ul class="slidernavi">
-          <li>
-            <button type="button" aria-disabled="true" id="scrollingcarouselprev">&lt;</button>
-            <!-- aria-disabled=true ボタン非活性 -->
-          </li>
-          <li>
-            <button type="button" aria-disabled="false" id="scrollingcarouselnext">&gt;</button>
-          </li>
-        </ul>
-      </div>
-      <div class="seasonalprod__sentence">
-        <h2 class="seasonalprod__title">
-          &nbsp;おすすめの商品
-        </h2>
-        <p class="seasonalprod__text">
-          この季節に美味しい。<br>和菓子の商品を集めました。
-        </p>
       </div>
     </div>
     <section id="japanesesweets" class="japanesesweets">

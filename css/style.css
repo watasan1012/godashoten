@@ -992,35 +992,53 @@ menu
   text-decoration: none;
 }
 
-/* seasonalproduct */
+/* recommend */
 
-.seasonalprod {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+.recommend {
   padding-left: 3vw;
   padding-right: 3vw;
-  width: 100vw;
 }
 
 @media screen and (min-width: 768px) {
-  .seasonalprod {
-    margin-bottom: 5vw;
-    margin-left: 30vw;
-    padding-left: 0;
+  .recommend {
+    padding-left: 30vw;
     padding-right: 0;
-    width: 70vw;
   }
+}
+
+.recommend__wrapper {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.recommend .recommend__left {
+  flex: 7;
+  overflow-x: scroll;
+}
+
+.recommend .recommend__right {
+  flex: 3;
+  display: flex;
+  writing-mode: vertical-rl;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.recommend__title {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Noto Serif JP", serif;
+}
+
+.recommend__text {
+  font-size: 2rem;
 }
 
 /* scrollingcarousel */
 
 .scrollingcarousel {
-  padding-right: 4%;
-  width: 66%;
-}
-
-.scrollingcarousel__wrapper {
   overflow-x: scroll;
   padding-bottom: 1em;
 }
@@ -1035,7 +1053,7 @@ menu
 .scrollingcarousel__item {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .scrollingcarousel__item:last-child {
@@ -1060,17 +1078,17 @@ menu
 }
 
 .scrollingcarousel__title {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   letter-spacing: 0.1em;
-  margin-top: 0.8em;
+  margin-top: 0.5em;
   text-align: center;
 }
 
 .scrollingcarousel__txt {
-  font-size: 2.2rem;
+  font-size: 2rem;
   letter-spacing: 0.1em;
-  margin-bottom: 0.6em;
-  margin-top: 0.1em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
   text-align: center;
 }
 
@@ -1099,37 +1117,7 @@ menu
   pointer-events: none;
 }
 
-.seasonalprod__sentence {
-  height: 400px;
-  width: 30%;
-  writing-mode: vertical-lr;
-}
 
-.seasonalprod__title {
-  color: #333;
-  font-size: 1.9em;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  line-height: 1.7;
-}
-
-@media screen and (min-width: 768px) {
-  .seasonalprod__title {
-    font-size: 2em;
-  }
-}
-
-.seasonalprod__text {
-  font-size: 1.8em;
-  letter-spacing: 0.1em;
-  line-height: 1.7;
-}
-
-@media screen and (min-width: 768px) {
-  .seasonalprod__text {
-    font-size: 1.8em;
-  }
-}
 
 /* japanesesweets */
 
@@ -1497,43 +1485,3 @@ goods
   word-wrap: break-word;
 }
 
-.recommend {
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
-
-@media screen and (min-width: 768px) {
-  .recommend {
-    padding-left: 30vw;
-    padding-right: 0;
-  }
-}
-
-
-.recommend__wrapper {
-  display: flex;
-}
-
-.recommend .recommend__left {
-  flex: 7;
-  background-color: lawngreen;
-}
-
-.recommend .recommend__right {
-  flex: 3;
-  display: flex;
-  writing-mode: vertical-rl;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-}
-
-.recommend__title {
-  font-size: 3rem;
-  font-weight: 400;
-  font-family: "Noto Serif JP", serif;
-}
-
-.recommend__text {
-  font-size: 2rem;
-}
