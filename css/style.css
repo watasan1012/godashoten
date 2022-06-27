@@ -555,7 +555,7 @@ product
   align-items: center;
   border: 1px solid #212121;
   display: flex;
-  font-size: 2rem;
+  font-size: 1.9rem;
   height: 60px;
   justify-content: center;
   letter-spacing: 0.1em;
@@ -978,6 +978,7 @@ menu
   height: 45px;
   list-style-type: none;
   font-size: 1.6rem;
+  margin-bottom: 1em;
 }
 
 .breadcrumb__item + .breadcrumb__item::before {
@@ -1222,7 +1223,7 @@ menu
 
 .menuproduct__price {
   font-size: 1.6rem;
-  margin-top: 0.2em;
+  margin-top: 0.8em;
   text-align: center;
 }
 
@@ -1230,8 +1231,8 @@ menu
   font-size: 2rem;
   letter-spacing: 0.1em;
   line-height: 1.7;
-  margin-bottom: 0.5em;
-  margin-top: 0.5em;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
 }
 
 .menuproduct__btn {
@@ -1348,8 +1349,12 @@ goods
   font-size: 2rem;
   letter-spacing: 0.1em;
   line-height: 1.7;
-  margin: 1vw 0 25px;
+  margin-bottom: 2em;
   text-align: left;
+}
+
+.goods__list {
+  margin-bottom: 50px;
 }
 
 .goods__item {
@@ -1380,7 +1385,6 @@ goods
 
 .onecase {
   margin-bottom: 80px;
-  margin-top: 80px;
 }
 
 .onecase__item {
